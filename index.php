@@ -58,7 +58,7 @@
                 $("showDownloadsContainer").show();
                 $.ajax({
                     method: "POST",
-                    url: "Ajax/download_video",
+                    url: "Ajax/download_video.php",
                     data: {url: URL}
                 }).done(function (data) {
                     console.log(data);
