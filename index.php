@@ -17,6 +17,7 @@
                 <form action="" onsubmit="downloadVideo();">
                     <label for="downloadURL" class="h1 font-weight-bold">Download Youtube Videos</label>
                     <input type="text" id="downloadURL" class="form-control" value="" name="url" style="height: 50px" placeholder="https://www.youtube.com/watch?v=5IHWfgX3RJs">
+                    <div class="alert alert-danger" id="errorText"><small class="text-danger">Invalid URL</small></div>
                     <button type="submit" class="btn btn-primary btn-block">Download</button>
                 </form>
             </div>
@@ -39,14 +40,17 @@
 
 <script type="text/javascript">
     function downloadVideo() {
+        let errorText = $("#errorText");
+        errorText.hide();
         event.preventDefault();
-        let URL = $("#downloadURL").val();
+        let URLContainer = $("#downloadURL");
+        let URL = URLContainer.val();
         // Check if URL is entered
         if (URL) {
             // Check if URL has proper
             // let URLEmbed = validateYouTubeUrl(URL);
             let URLEmbed = true;
-            console.log(URLEmbed);
+            // console.log(URLEmbed);
             if (URLEmbed) {
                 // validateUrl(URL).then(res => {
                 //         console.log(res);
@@ -55,7 +59,8 @@
                 //     // log the error
                 //     // console.log("error");
                 // })
-                $("showDownloadsContainer").show();
+                $("#showDownloadsContainer").show();
+                URLContainer.val("");
                 $.ajax({
                     method: "POST",
                     url: "Ajax/download_video.php",
@@ -65,11 +70,13 @@
                 });
 
             } else {
+                errorText.children("small").html("Invalid URL, video not found.");
+                errorText.show();
                 console.log("Invalid URL, no video found.");
             }
-            // console.log(URL.indexOf("?v="));
-            // console.log(URL);
         } else {
+            errorText.children("small").html("Invalid URL, no URL entered.");
+            errorText.show();
             console.log("No url entered.");
         }
 
