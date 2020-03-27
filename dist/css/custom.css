@@ -32,6 +32,10 @@
     animation: spin 2s linear infinite;
 }
 
+.mw-50 {
+    width: 50% !important;
+}
+
 /* Safari */
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -41,4 +45,10 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 1200px) {
+    .mw-50 {
+        width: 100% !important;
+    }
 }

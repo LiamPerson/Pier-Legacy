@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Test page</title>
+    <title>Pier</title>
     <link rel="stylesheet" href="dist/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="dist/css/custom.css" type="text/css">
 </head>
@@ -12,7 +12,7 @@
 
 <main class="container-fluid">
     <div class="d-flex align-items-center justify-content-center w-100 h-100">
-        <div class=" w-50 text-center">
+        <div class="mw-50 text-center">
             <div class="form-group">
                 <form action="" onsubmit="downloadVideo();">
                     <label for="downloadURL" class="h1 font-weight-bold">Download Youtube Videos</label>
