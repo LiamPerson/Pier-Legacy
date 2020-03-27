@@ -17,7 +17,7 @@
                 <form action="" onsubmit="downloadVideo();">
                     <label for="downloadURL" class="h1 font-weight-bold">Download Youtube Videos</label>
                     <input type="text" id="downloadURL" class="form-control" value="" name="url" style="height: 50px" placeholder="https://www.youtube.com/watch?v=5IHWfgX3RJs">
-                    <div class="alert alert-danger" style="display: none;" id="errorText"><small class="text-danger">Invalid URL</small></div>
+                    <div class="alert alert-danger" style="display: none;" id="displayText"><small class="text-danger">Invalid URL</small></div>
                     <button type="submit" class="btn btn-primary btn-block" id="downloadButton">Download</button>
                 </form>
             </div>
@@ -42,12 +42,12 @@
 <script src="dist/bootstrap-4.0.0-dist/js/popper.min.js"></script>
 
 <script type="text/javascript">
+    const displayText = $("#displayText");
+
     function downloadVideo() {
-        let errorText = $("#errorText");
-        errorText.hide();
+        displayText.hide();
         let dlButton = $("#downloadButton");
         let dlContainer = $("#showDownloadsContainer");
-        dlButton.prop("disabled", true);
         event.preventDefault();
         let URLContainer = $("#downloadURL");
         let URL = URLContainer.val();
@@ -65,6 +65,7 @@
                 //     // log the error
                 //     // console.log("error");
                 // })
+                dlButton.prop("disabled", true);
                 dlContainer.show();
                 URLContainer.val("");
                 $.ajax({
@@ -75,23 +76,37 @@
                     console.log(data);
                 });
 
+                // Enable the button again
+                setTimeout(()=>{
+                    dlButton.prop("disabled", false);
+                    // errorText.hide();
+                    displaySuccess("Video downloaded ✔");
+                    dlContainer.hide();
+                }, 3000)
+
             } else {
-                errorText.children("small").html("Invalid URL, video not found.");
-                errorText.show();
+                displayError("small").html("Invalid URL, video not found.");
                 console.log("Invalid URL, no video found.");
             }
         } else {
-            errorText.children("small").html("Invalid URL, no URL entered.");
-            errorText.show();
+            displayError("Invalid URL, no URL entered.");
             console.log("No url entered.");
         }
 
-        setTimeout(()=>{
-            dlButton.prop("disabled", false);
-            // errorText.hide();
-            dlContainer.hide();
-        }, 3000)
+    }
 
+    function displayError(msg) {
+        displayText.removeClass("alert-success alert-info").addClass("alert-danger");
+        displayText.children("small").removeClass("text-danger text-success text-info").addClass("text-danger");
+        displayText.children("small").html(msg);
+        displayText.show();
+    }
+
+    function displaySuccess(msg) {
+        displayText.removeClass("alert-danger alert-info").addClass("alert-success");
+        displayText.children("small").removeClass("text-danger text-success text-info").addClass("text-success");
+        displayText.children("small").html(msg);
+        displayText.show();
     }
 
     function validateYouTubeUrl(url) {
