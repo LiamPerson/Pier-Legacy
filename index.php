@@ -17,7 +17,7 @@
                 <form action="" onsubmit="downloadVideo();">
                     <label for="downloadURL" class="h1 font-weight-bold">Download Youtube Videos</label>
                     <input type="text" id="downloadURL" class="form-control" value="" name="url" style="height: 50px" placeholder="https://www.youtube.com/watch?v=5IHWfgX3RJs">
-                    <div class="alert alert-danger" id="errorText"><small class="text-danger">Invalid URL</small></div>
+                    <div class="alert alert-danger" style="display: none;" id="errorText"><small class="text-danger">Invalid URL</small></div>
                     <button type="submit" class="btn btn-primary btn-block">Download</button>
                 </form>
             </div>
