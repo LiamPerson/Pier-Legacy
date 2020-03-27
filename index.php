@@ -66,7 +66,7 @@
                 //     // console.log("error");
                 // })
                 dlButton.prop("disabled", true);
-                dlContainer.show();
+                dlContainer.slideDown();
                 URLContainer.val("");
                 $.ajax({
                     method: "POST",
@@ -81,7 +81,7 @@
                     dlButton.prop("disabled", false);
                     // errorText.hide();
                     displaySuccess("Video downloaded! ✔");
-                    dlContainer.hide();
+                    dlContainer.slideUp();
                 }, 3000)
 
             } else {
