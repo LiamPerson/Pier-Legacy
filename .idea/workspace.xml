@@ -23,6 +23,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\xampp\htdocs\Pier\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1Zg0CRn8HmryrvCQwdoSBjBX9Af" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,6 +71,7 @@
       <updated>1585245301424</updated>
       <workItem from="1585245302642" duration="6051000" />
       <workItem from="1585297683318" duration="2393000" />
+      <workItem from="1585300886630" duration="270000" />
     </task>
     <servers />
   </component>
