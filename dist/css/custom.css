@@ -25,7 +25,7 @@
 .loader {
     border: 5px solid transparent;
     border-radius: 50%;
-    border-top: 5px solid var(--primary);
+    border-top: 5px solid var(--dark);
     width: 35px;
     height: 35px;
     -webkit-animation: spin 2s linear infinite; /* Safari */
