@@ -24,7 +24,7 @@
             <div class="form-group">
                 <div id="showDownloadsContainer" style="display: none;">
                     <div class="d-flex justify-content-center">
-                        <h5>Video downloading... </h5>
+                        <h5>Attempting download...</h5>
                         <div class="loader" style="margin-left: 15px"></div>
                     </div>
                     <p><a target="_blank" href="youtubedl/">View downloaded videos</a></p>
@@ -88,7 +88,7 @@
 
         setTimeout(()=>{
             dlButton.prop("disabled", false);
-            errorText.hide();
+            // errorText.hide();
             dlContainer.hide();
         }, 3000)
 
