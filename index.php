@@ -29,10 +29,10 @@
                     </div>
                     <p><a target="_blank" href="youtubedl/">View downloaded videos</a></p>
                 </div>
-                <a target="_blank" href="youtubedl/">Downloaded Videos</a>
-                <a target="_blank" href="movies/">Movies</a>
-                <a target="_blank" href="shows/">Shows</a>
-                <a target="_blank" href="games/">Games</a>
+                <a target="_blank" href="youtubedl/">Downloaded Videos</a><br>
+                <a target="_blank" href="movies/">Movies</a><br>
+                <a target="_blank" href="shows/">Shows</a><br>
+                <a target="_blank" href="games/">Games</a><br>
             </div>
         </div>
     </div>
