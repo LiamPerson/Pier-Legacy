@@ -5,6 +5,7 @@
     <li>PHP 7+ (made with 7.3.14-1~deb10u1)</li>
     <li>youtube-dl (latest stable)</li>
     <li>ffmpeg (latest stable)</li>
+    <li>Allow apache & shell commands to access /var/www/html</li>
 </ul>
 
 <h2>Help</h2>
