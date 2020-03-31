@@ -37,7 +37,7 @@
                     </div>
                     <p><a target="_blank" href="youtubedl/">View downloaded media</a></p>
                 </div>
-                <a target="_blank" href="youtubedl/">Downloaded Videos</a>
+                <a target="_blank" href="youtubedl/">Downloaded Media</a>
                 <div class="d-flex flex-wrap justify-content-between">
                     <a class="" target="_blank" href="movies/">🎥 Movies 🎥</a>
                     <a target="_blank" href="shows/">🎞️ Shows 🎞️</a>
