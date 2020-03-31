@@ -15,8 +15,16 @@
         <div class="mw-50 text-center">
             <div class="form-group">
                 <form action="" onsubmit="downloadVideo();">
-                    <label for="downloadURL" class="h1 font-weight-bold">Download Youtube Videos</label>
+                    <label for="downloadURL" class="h1 font-weight-bold">Download Media</label>
+                    <div class="input-group">
                     <input type="text" id="downloadURL" class="form-control" value="" name="url" style="height: 50px" placeholder="https://www.youtube.com/watch?v=5IHWfgX3RJs">
+                        <div class="input-group-append">
+                            <select name="mediaType" id="mediaType">
+                                <option value="mp4">MP4 (Video)</option>
+                                <option value="mp3">MP3 (Music)</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="alert alert-danger" style="display: none;" id="displayText"><small class="text-danger">Invalid URL</small></div>
                     <button type="submit" class="btn btn-primary btn-block" id="downloadButton">Download</button>
                 </form>
@@ -27,14 +35,17 @@
                         <h5>Downloading...</h5>
                         <div class="loader" style="margin-left: 15px"></div>
                     </div>
-                    <p><a target="_blank" href="youtubedl/">View downloaded videos</a></p>
+                    <p><a target="_blank" href="youtubedl/">View downloaded media</a></p>
                 </div>
                 <a target="_blank" href="youtubedl/">Downloaded Videos</a>
                 <div class="d-flex flex-wrap justify-content-between">
                     <a class="" target="_blank" href="movies/">🎥 Movies 🎥</a>
                     <a target="_blank" href="shows/">🎞️ Shows 🎞️</a>
+                    <a class="" target="_blank" href="music/">🎵 Music 🎵</a>
+                    <a target="_blank" href="flash/">🕹 Flash 🕹</a>
                     <a target="_blank" href="games/">🎮 Games 🎮</a>
                 </div>
+                <a target="_blank" href="shared/">Shared Files</a>
             </div>
         </div>
     </div>
@@ -85,7 +96,7 @@
                 setTimeout(()=>{
                     dlButton.prop("disabled", false);
                     // errorText.hide();
-                    displaySuccess("Video downloaded! ✔");
+                    displaySuccess("Media downloaded! ✔");
                     dlContainer.slideUp();
                 }, 3000)
 
