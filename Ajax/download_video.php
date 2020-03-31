@@ -1,7 +1,21 @@
 <?php
 //header("Content-Type: application/json");
 //execInBackground("youtube-dl --config-location '/var/www/html/youtubedl' " . $_POST["url"]);
-echo exec("youtube-dl --config-location '/var/www/html/youtubedl' " . $_POST["url"] . " > /dev/null &");
+if(isset($_POST["mediaType"]) && !empty($_POST["mediaType"])) {
+    switch ($_POST["mediaType"]) {
+        case "mp4":
+            echo exec("youtube-dl --config-location '/var/www/html/youtubedl' " . $_POST["url"] . " > /dev/null &");
+            break;
+
+        case "mp3":
+            echo exec("youtube-dl --config-location -x --audio-format mp3 '/var/www/html/youtubedl' " . $_POST["url"] . " > /dev/null &");
+            break;
+
+        default:
+            echo exec("youtube-dl --config-location '/var/www/html/youtubedl' " . $_POST["url"] . " > /dev/null &");
+            break;
+    }
+}
 
 //function execInBackground($cmd)
 //{
