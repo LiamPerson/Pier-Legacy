@@ -1,6 +1,9 @@
 <?php
 //header("Content-Type: application/json");
 //execInBackground("youtube-dl --config-location '/var/www/html/youtubedl' " . $_POST["url"]);
+//var_dump($_POST);
+//exit();
+
 if(isset($_POST["mediaType"]) && !empty($_POST["mediaType"])) {
     switch ($_POST["mediaType"]) {
         case "mp4":

@@ -20,7 +20,7 @@
                     <input type="text" id="downloadURL" class="form-control" value="" name="url" style="height: 50px" placeholder="https://www.youtube.com/watch?v=5IHWfgX3RJs">
                         <div class="input-group-append">
                             <select name="mediaType" id="mediaType">
-                                <option value="mp4">MP4 (Video)</option>
+                                <option value="mp4" selected>MP4 (Video)</option>
                                 <option value="mp3">MP3 (Music)</option>
                             </select>
                         </div>
@@ -67,6 +67,7 @@
         event.preventDefault();
         let URLContainer = $("#downloadURL");
         let URL = URLContainer.val();
+        let mediaType = $("#mediaType").val();
         // Check if URL is entered
         if (URL) {
             // Check if URL has proper
@@ -87,7 +88,10 @@
                 $.ajax({
                     method: "POST",
                     url: "Ajax/download_video.php",
-                    data: {url: URL}
+                    data: {
+                        url: URL,
+                        mediaType: mediaType
+                    }
                 }).done(function (data) {
                     console.log(data);
                 });
