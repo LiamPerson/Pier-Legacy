@@ -4,15 +4,15 @@
 if(isset($_POST["mediaType"]) && !empty($_POST["mediaType"])) {
     switch ($_POST["mediaType"]) {
         case "mp4":
-            echo exec("youtube-dl --config-location '/var/www/html/youtubedl/youtube-dl-video.conf' " . $_POST["url"] . " > /dev/null &");
+            echo exec("youtube-dl --config-location '/var/www/html/config/youtube-dl/mp4' " . $_POST["url"] . " > /dev/null &");
             break;
 
         case "mp3":
-            echo exec("youtube-dl --config-location -x --audio-format mp3 '/var/www/html/youtubedl/youtube-dl-music.conf' " . $_POST["url"] . " > /dev/null &");
+            echo exec("youtube-dl --config-location '/var/www/html/config/youtube-dl/mp3' " . $_POST["url"] . " > /dev/null &");
             break;
 
         default:
-            echo exec("youtube-dl --config-location '/var/www/html/youtubedl/youtube-dl-video.conf' " . $_POST["url"] . " > /dev/null &");
+            echo exec("youtube-dl --config-location '/var/www/html/config/youtube-dl/default' " . $_POST["url"] . " > /dev/null &");
             break;
     }
 }
