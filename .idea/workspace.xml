@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax/download_video.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/download_video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/youtube-dl/default/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/default/youtube-dl.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/youtube-dl/mp3/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/mp3/youtube-dl.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +55,11 @@
       <recent name="D:\xampp\htdocs\Pier\youtubedl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\Pier\downloads" />
       <recent name="D:\xampp\htdocs\Pier\config\youtube-dl\mp4" />
       <recent name="D:\xampp\htdocs\Pier\config\youtube-dl\mp3" />
       <recent name="D:\xampp\htdocs\Pier\youtubedl" />
       <recent name="D:\xampp\htdocs\Pier\dist\js" />
-      <recent name="D:\xampp\htdocs\Pier\dist" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -85,7 +88,7 @@
       <workItem from="1585297683318" duration="2393000" />
       <workItem from="1585300886630" duration="6113000" />
       <workItem from="1585409597250" duration="1286000" />
-      <workItem from="1585672576659" duration="1650000" />
+      <workItem from="1585672576659" duration="2347000" />
     </task>
     <servers />
   </component>

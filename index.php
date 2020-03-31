@@ -17,7 +17,7 @@
                 <form action="" onsubmit="downloadVideo();">
                     <label for="downloadURL" class="h1 font-weight-bold">Download Media</label>
                     <div class="input-group">
-                    <input type="text" id="downloadURL" class="form-control" value="" name="url" style="height: 50px" placeholder="https://www.youtube.com/watch?v=5IHWfgX3RJs">
+                        <input type="text" id="downloadURL" class="form-control" value="" name="url" style="height: 50px" placeholder="https://www.youtube.com/watch?v=5IHWfgX3RJs">
                         <div class="input-group-append">
                             <select name="mediaType" id="mediaType">
                                 <option value="mp4" selected>MP4 (Video)</option>
@@ -35,10 +35,13 @@
                         <h5>Downloading...</h5>
                         <div class="loader" style="margin-left: 15px"></div>
                     </div>
-                    <p><a target="_blank" href="youtubedl/">View downloaded media</a></p>
+                    <p><a target="_blank" href="downloads/youtubedl_video/">View downloaded media</a></p>
                 </div>
-                <a target="_blank" href="youtubedl/">Downloaded Media</a>
-                <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap justify-content-center my-3">
+                    <a target="_blank" class="mx-3" href="downloads/youtubedl_video/">🌐🎬 Downloaded Videos 🎬🌐</a>
+                    <a target="_blank" class="mx-3" href="downloads/youtubedl_audio/">🌐🎵 Downloaded Music 🎵🌐</a>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between my-3">
                     <a class="" target="_blank" href="movies/">🎥 Movies 🎥</a>
                     <a target="_blank" href="shows/">🎞️ Shows 🎞️</a>
                     <a class="" target="_blank" href="music/">🎵 Music 🎵</a>
@@ -97,7 +100,7 @@
                 });
 
                 // Enable the button again
-                setTimeout(()=>{
+                setTimeout(() => {
                     dlButton.prop("disabled", false);
                     // errorText.hide();
                     displaySuccess("Media downloaded! ✔");

@@ -1,6 +1,7 @@
 .git
 .idea
-youtubedl
+downloads/youtubedl_video
+downloads/youtubedl_audio
 shows
 movies
 shared
