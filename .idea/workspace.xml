@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/youtube-dl/default/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/default/youtube-dl.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/youtube-dl/mp3/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/mp3/youtube-dl.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajax/download_video.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/download_video.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +84,8 @@
       <workItem from="1585297683318" duration="2393000" />
       <workItem from="1585300886630" duration="6113000" />
       <workItem from="1585409597250" duration="1286000" />
-      <workItem from="1585672576659" duration="2347000" />
+      <workItem from="1585672576659" duration="3607000" />
+      <workItem from="1585695745029" duration="86000" />
     </task>
     <servers />
   </component>
@@ -104,5 +101,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1585299031253" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1585695818362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1585695818362" />
   </component>
 </project>
