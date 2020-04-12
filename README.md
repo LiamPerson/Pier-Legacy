@@ -18,7 +18,10 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <code>sudo apt-get install python-pip</code>
 <code>sudo pip install youtube-dl</code>
 </li>
+
 <li><a href="https://github.com/JolleJolles/pirecorder/wiki/Installing-ffmpeg-on-Raspberry-Pi-with-h264-support">Installing ffmpeg on Raspbian</a></li>
+<li>Install MariaDB Server <code>sudo apt install mariadb-server php-mysql -y</code> DO NOT SET ROOT PASSWORD!</li>
     <li>Clone to /var/www/html <code>cd /var/www/html</code> <code>git clone https://github.com/YeloPartyHat/Pier.git</code></li>
+    
 </ul>
 <strong>Apache2 hosts from /var/www/html/ on Raspbian</strong>
