@@ -14,9 +14,9 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <li>Install Apache2 <code>sudo apt update</code> <code>sudo apt install apache2 -y</code></li>
 <li>Install PHP <code>sudo apt install php libapache2-mod-php -y</code></li>
 <li> Install youtube-dl
-<code>$ sudo apt-get install youtube-dl</code>
-<code>$ sudo apt-get install python-pip</code>
-<code>$ sudo pip install youtube-dl</code>
+<code>sudo apt-get install youtube-dl</code>
+<code>sudo apt-get install python-pip</code>
+<code>sudo pip install youtube-dl</code>
 </li>
 <li><a href="https://github.com/JolleJolles/pirecorder/wiki/Installing-ffmpeg-on-Raspberry-Pi-with-h264-support">Installing ffmpeg on Raspbian</a></li>
 </ul>
