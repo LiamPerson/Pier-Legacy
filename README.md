@@ -1,4 +1,5 @@
 # Pier - Raspberry Pi Home Server
+Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <h2>Requirements:</h2>
 <ul>
     <li>Apache/2.4.38 (Raspbian)</li>
