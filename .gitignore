@@ -8,4 +8,6 @@ stored/shared
 stored/flash
 stored/games
 stored/music
+
 !empty.txt
+!.gitignore
