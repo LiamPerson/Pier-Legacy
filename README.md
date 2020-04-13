@@ -25,3 +25,11 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
     
 </ul>
 <strong>Apache2 hosts from /var/www/html/ on Raspbian</strong>
+
+
+<h2>Troubleshooting</h2>
+<ul>
+<li>Make sure config file locations are correct.</li>
+<li>Make sure username and password are set correctly in config.php</li>
+</ul>
+

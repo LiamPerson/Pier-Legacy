@@ -1,0 +1,325 @@
+/*
+Initialisation
+ */
+
+$font-size-standard: 14px;
+$col-xPadding: 7.5px;
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #2121;
+}
+
+// Colours
+$white: #FFF;
+$black: #000;
+$dark: #212121;
+
+$primary: #00F;
+
+// Transitions
+$fast: .2s;
+$moderate: .5s;
+
+
+/***
+ *        __   ___   ____     ___
+ *       /  ] /   \ |    \   /  _]
+ *      /  / |     ||  D  ) /  [_
+ *     /  /  |  O  ||    / |    _]
+ *    /   \_ |     ||    \ |   [_
+ *    \     ||     ||  .  \|     |
+ *     \____| \___/ |__|\_||_____|
+ *
+ */
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+.col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+.col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+  padding-left: $col_xPadding;
+  padding-right: $col_xPadding;
+}
+
+.row {
+  margin-right: -$col_xPadding;
+  margin-left: -$col_xPadding;
+}
+
+.container,
+.container-fluid {
+  padding: 0 $col_xPadding;
+}
+
+
+* {
+  font-size: $font-size-standard;
+}
+
+
+/***
+ *    888    888                             888                        d8b 888
+ *    888    888                             888                        Y8P 888
+ *    888    888                             888                            888
+ *    888888 88888b.  888  888 88888b.d88b.  88888b.  88888b.   8888b.  888 888 .d8888b
+ *    888    888 "88b 888  888 888 "888 "88b 888 "88b 888 "88b     "88b 888 888 88K
+ *    888    888  888 888  888 888  888  888 888  888 888  888 .d888888 888 888 "Y8888b.
+ *    Y88b.  888  888 Y88b 888 888  888  888 888 d88P 888  888 888  888 888 888      X88
+ *     "Y888 888  888  "Y88888 888  888  888 88888P"  888  888 "Y888888 888 888  88888P'
+ *
+ == THUMBNAILS (all thumbnail options)
+ */
+
+$thumbnail-max-height: 202px;
+
+.videoThumbnail-main {
+  cursor: pointer;
+  transition: $fast;
+  border: 1px solid transparent;
+
+  &:hover {
+    .videoThumbnail-afterContainer {
+      &:after {
+        content: "⯈ PLAY VIDEO";
+        color: $white;
+        font-weight: bold;
+        font-size: $font-size-standard * 1.18;
+        background-color: rgba($black, 0.8);
+
+        top: 0;
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .videoThumbnailContainer {
+    position: relative;
+
+    .videoThumbnail-afterContainer {
+      .videoThumbnail {
+        object-fit: cover;
+
+        width: 100%;
+        max-height: $thumbnail-max-height;
+      }
+
+      time {
+        color: $white;
+        font-size: $font-size-standard * 0.95;
+        position: absolute;
+        bottom: $col-xPadding;
+        right: $col-xPadding;
+        background: $black;
+      }
+    }
+  }
+
+  .creatorThumbnail {
+    object-fit: contain;
+    width: 100%;
+
+    min-width: 36px;
+    min-height: 36px;
+
+    max-width: 36px;
+    max-height: 36px;
+
+    border-radius: 50%;
+  }
+
+  .videoThumbnail-Title {
+    color: $black;
+    font-size: $font-size-standard * 1.18;
+  }
+
+  .videoThumbnail-CreatorName {
+    color: rgba($black, 0.8);
+  }
+
+  .videoThumbnail-AddedDate {
+    margin: 0;
+  }
+}
+
+.gridSection {
+  margin-top: 25px;
+}
+
+.gridTitle {
+  margin-bottom: 15px;
+}
+
+
+/***
+ *     _______                         __                 __
+ *    /       \                       /  |               /  |
+ *    $$$$$$$  |  ______    ______   _$$ |_    _______  _$$ |_     ______   ______    ______
+ *    $$ |__$$ | /      \  /      \ / $$   |  /       |/ $$   |   /      \ /      \  /      \
+ *    $$    $$< /$$$$$$  |/$$$$$$  |$$$$$$/  /$$$$$$$/ $$$$$$/   /$$$$$$  |$$$$$$  |/$$$$$$  |
+ *    $$$$$$$  |$$ |  $$ |$$ |  $$ |  $$ | __$$      \   $$ | __ $$ |  $$/ /    $$ |$$ |  $$ |
+ *    $$ |__$$ |$$ \__$$ |$$ \__$$ |  $$ |/  |$$$$$$  |  $$ |/  |$$ |     /$$$$$$$ |$$ |__$$ |
+ *    $$    $$/ $$    $$/ $$    $$/   $$  $$//     $$/   $$  $$/ $$ |     $$    $$ |$$    $$/
+ *    $$$$$$$/   $$$$$$/   $$$$$$/     $$$$/ $$$$$$$/     $$$$/  $$/       $$$$$$$/ $$$$$$$/
+ *                                                                                  $$ |
+ *                                                                                  $$ |
+ *                                                                                  $$/
+ == BOOTSTRAP (Bootstrap overrides)
+ */
+
+.btn-dark {
+  background-color: rgba($white, .08);
+  border-color: rgba($white, .08);
+}
+
+.input-group {
+  .input-group-append {
+    .btn-dark {
+      border: none;
+      padding: 0 25px;
+
+      &:focus,
+      &:hover {
+        background-color: rgba($white, 0.12);
+      }
+    }
+  }
+
+  .form-control-dark {
+    border-right: none;
+  }
+}
+
+
+.sidebar {
+  .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba($black, .3);
+  border-color: rgba($black, .3);
+
+  transition: $moderate;
+
+  &:focus {
+    border-color: $primary;
+    //box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+    box-shadow: none;
+  }
+}
+
+.navbar {
+  .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+  }
+}
+
+.mw-50 {
+  width: 50% !important;
+}
+
+.pl-1x {
+  padding-left: $col-xPadding;
+}
+
+
+/***
+ *      _                     _
+ *     | |                   | |
+ *     | |     ___   __ _  __| | ___ _ __ ___
+ *     | |    / _ \ / _` |/ _` |/ _ \ '__/ __|
+ *     | |___| (_) | (_| | (_| |  __/ |  \__ \
+ *     |______\___/ \__,_|\__,_|\___|_|  |___/
+ *
+ *
+ == LOADERS (Website loaders and loading things)
+ */
+
+
+.loader {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid var(--dark);
+  width: 35px;
+  height: 35px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/***
+ *
+ *                                                            _______
+ *          .--'''--.       __  __   ___         __.....__    \  ___ `'.   .--.
+ *       ,' .--'''--. `.   |  |/  `.'   `.   .-''         '.   ' |--.\  \  |__|
+ *      ' '           `. \ |   .-.  .-.   ' /     .-''"'-.  `. | |    \  ' .--.
+ *     / /    _..--''-. \ :|  |  |  |  |  |/     /________\   \| |     |  '|  |    __
+ *    | |   .' .-'''/ / ' ||  |  |  |  |  ||                  || |     |  ||  | .:--.'.
+ *    : :  ' /     /.'  / /|  |  |  |  |  |\    .-------------'| |     ' .'|  |/ |   \ |
+ *    ' '  ' '._.' '._.' / |  |  |  |  |  | \    '-.____...---.| |___.' /' |  |`" __ | |
+ *     \ \ `.._..'._..''   |__|  |__|  |__|  `.             .'/_______.'/  |__| .'.''| |
+ *      . '.                                   `''-...... -'  \_______|/       / /   | |_
+ *       '. '-..__..'|                                                         \ \._,\ '/
+ *         `-...____.'                                                          `--'  `"
+ == @media Queries
+ */
+
+
+@media (max-width: 1200px) {
+  .mw-50 {
+    width: 100% !important;
+  }
+}

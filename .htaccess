@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /Pier/index.php [QSA,L]
+
+Addhandler application/x-httpd-php .html .php .srv
+
+<Limit GET POST PUT DELETE>
+  Allow from all
+</Limit>
