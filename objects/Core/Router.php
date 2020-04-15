@@ -13,31 +13,29 @@ $ajaxFile = "";
 $gotoLoc = "";
 
 if (isset($slugs[1]) && !empty($slugs[1])) {
-    if (isset($slugs[2]) && !empty($slugs[2])) {
-        switch ($slugs[2]) {
-            case "action":
-                $actionObj = $slugs[2];
-                if (isset($slugs[3]) && !empty($slugs[3]))
-                    $actionFunction = $slugs[3];
-                break;
+    switch ($slugs[1]) {
+        case "action":
+            $actionObj = $slugs[1];
+            if (isset($slugs[2]) && !empty($slugs[2]))
+                $actionFunction = $slugs[2];
+            break;
 
-            case "ajax":
-                $ajax = $slugs[2];
-                for ($i = 3; $i <= count($slugs); $i++) {
-                    if (isset($slugs[$i]) && !empty($slugs[$i]))
-                        $ajaxFile .= $slugs[$i];
-                }
-                break;
+        case "ajax":
+            $ajax = $slugs[1];
+            for ($i = 2; $i <= count($slugs); $i++) {
+                if (isset($slugs[$i]) && !empty($slugs[$i]))
+                    $ajaxFile .= $slugs[$i];
+            }
+            break;
 
-            default:
-                for ($i = 2; $i <= count($slugs); $i++) {
-                    if (isset($slugs[$i]) && !empty($slugs[$i]))
-                        $gotoLoc .= $slugs[$i];
-                }
-                break;
-        }
-
+        default:
+            for ($i = 1; $i <= count($slugs); $i++) {
+                if (isset($slugs[$i]) && !empty($slugs[$i]))
+                    $gotoLoc .= $slugs[$i];
+            }
+            break;
     }
+
 }
 
 //s($actionObj);

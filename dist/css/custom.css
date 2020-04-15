@@ -60,6 +60,14 @@ Initialisation
   font-size: 14px;
 }
 
+.bottom-dl_video {
+  position: fixed;
+  bottom: -7.5px;
+  width: 100%;
+  max-width: calc(16.666667% - 15px);
+  display: block;
+}
+
 /***
  *    888    888                             888                        d8b 888
  *    888    888                             888                        Y8P 888
@@ -254,6 +262,11 @@ Initialisation
 @media (max-width: 1200px) {
   .mw-50 {
     width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .bottom-dl_video {
+    display: none;
   }
 }
 

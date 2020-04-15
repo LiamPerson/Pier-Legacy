@@ -2,7 +2,7 @@ Options +FollowSymLinks
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ /Pier/index.php [QSA,L]
+RewriteRule ^(.*)$ /index.php [QSA,L]
 
 Addhandler application/x-httpd-php .html .php .srv
 

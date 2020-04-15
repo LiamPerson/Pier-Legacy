@@ -77,6 +77,14 @@ $moderate: .5s;
   font-size: $font-size-standard;
 }
 
+.bottom-dl_video {
+  position: fixed;
+  bottom: -$col-xPadding;
+  width: 100%;
+  max-width: calc(16.666667% - #{$col-xPadding*2});
+  display: block;
+}
+
 
 /***
  *    888    888                             888                        d8b 888
@@ -193,6 +201,11 @@ $thumbnail-max-height: 202px;
  *                                                                                  $$/
  == BOOTSTRAP (Bootstrap overrides)
  */
+
+//.sticky-bottom {
+//  position: static;
+//  bottom: 0;
+//}
 
 .btn-dark {
   background-color: rgba($white, .08);
@@ -321,5 +334,11 @@ $thumbnail-max-height: 202px;
 @media (max-width: 1200px) {
   .mw-50 {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-dl_video {
+    display: none;
   }
 }
