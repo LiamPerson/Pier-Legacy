@@ -2,7 +2,7 @@
 
 function require_directory($path) {
     $files = glob($path . "/*.php"); // return array files
-    $dirs = glob( $path . "/*", GLOB_ONLYDIR); // return array files
+    $dirs = glob($path . "/*", GLOB_ONLYDIR); // return array files
 
     foreach ($files as $phpFile) {
         require_once("$phpFile");
@@ -18,7 +18,7 @@ function require_directory($path) {
 
 function include_directory($path) {
     $files = glob($path . "/*.php"); // return array files
-    $dirs = glob( $path . "/*", GLOB_ONLYDIR); // return array files
+    $dirs = glob($path . "/*", GLOB_ONLYDIR); // return array files
 
     foreach ($files as $phpFile) {
         include("$phpFile");
@@ -30,5 +30,13 @@ function include_directory($path) {
             include("$phpFile");
         }
     }
+}
+
+function seconds_to_timestamp($s): string {
+    return gmdate("H:i:s", $s);
+}
+
+function string_to_timestamp($s): string {
+    return date("Y-m-d H:i:s", strtotime($s));
 }
 

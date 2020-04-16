@@ -10,9 +10,8 @@ class Database {
         $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
         try {
             $this->dbh = new PDO($dsn, DB_USERNAME, DB_PASSWORD, $options);
-        }
-        catch (PDOException $e) {
-            echo "Connection failed: " . $e->getMessage();
+        } catch (PDOException $e) {
+            echo "Connection to the MariaDB failed: " . $e->getMessage() . " ... This could be caused by not setting up your MariaDB, incorrect IP address or port, incorrect credentials, port in use for another application. Please check that you have set up your MariaDB correctly and that it is running.";
         }
     }
 
@@ -30,16 +29,20 @@ class Database {
         return $this->stmt->execute();
     }
 
-    public function resultSet(): ?array {
+    public function resultSet() {
         return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function single(): ?array {
+    public function single() {
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
 
     public function rowCount(): int {
         return $this->stmt->rowCount();
+    }
+
+    public function lastInsertId() {
+        return $this->dbh->lastInsertId();
     }
 
 }

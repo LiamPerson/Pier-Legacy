@@ -1,9 +1,5 @@
 <?php
 include "core/_startApp.php";
-global $db;
-$db->query("SELECT * FROM dl_videos");
-$db->execute();
-s($db->resultset());
 
 ?>
 <head>
@@ -88,9 +84,6 @@ s($db->resultset());
         const dlURLObj = e.find("input[type='text']");
 
         let URL = dlURLObj.val();
-
-
-        console.log(URL);
 
         if (URL) {
             // Check if URL has proper

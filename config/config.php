@@ -1,4 +1,7 @@
 <?php
+// Root Directory
+//define("ROOT", "/var/www/html/");
+define("ROOT", "D:/xampp/htdocs/Pier/");
 // Your database's IP address relative to the database host
 // (Most likely localhost)
 define("IP_ADDRESS", "192.168.8.77");
