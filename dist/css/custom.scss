@@ -99,8 +99,6 @@ $moderate: .5s;
  == THUMBNAILS (all thumbnail options)
  */
 
-$thumbnail-max-height: 202px;
-
 .videoThumbnail-main {
   cursor: pointer;
   transition: $fast;
@@ -132,11 +130,18 @@ $thumbnail-max-height: 202px;
     position: relative;
 
     .videoThumbnail-afterContainer {
+      position: relative;
+      padding-top: 56.25%; // aspect ratio
       .videoThumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         object-fit: cover;
 
         width: 100%;
-        max-height: $thumbnail-max-height;
+        height: 100%;
       }
 
       time {

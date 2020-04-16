@@ -11,14 +11,14 @@ if ($vJSON) {
     $thumbFilePath = Youtube::_saveVideoThumbnail_FromURL($vInfo["thumbnail"], $videoID);
 
     // Check if author exists in system
-    $sql = "SELECT ID FROM authors_dlvideos WHERE siteID=:siteID";
+    $sql = "SELECT ID FROM creators_dlvideos WHERE siteID=:siteID";
     $db->query($sql);
     $db->bind(":siteID", $vInfo["uploader_id"]);
     $db->execute();
-    $authorID = $db->single()["ID"];
+    $creatorID = $db->single()["ID"];
     // If author doesn't exist, register author
-    if (!(isset($authorID) && !empty($authorID))) {
-        $sql = "INSERT INTO authors_dlvideos (siteID, name, channel_URL)
+    if (!(isset($creatorID) && !empty($creatorID))) {
+        $sql = "INSERT INTO creators_dlvideos (siteID, name, channel_URL)
                                     VALUES (:siteID, :name, :channel_URL)";
         $db->query($sql);
         $db->bind(":siteID", $vInfo["uploader_id"]);
@@ -26,14 +26,14 @@ if ($vJSON) {
         $db->bind(":channel_URL", $vInfo["channel_url"]);
         $db->execute();
 
-        $authorID = $db->lastInsertId();
+        $creatorID = $db->lastInsertId();
     }
 
     // Enter information into database
     $sql = "INSERT INTO dl_videos (
                        name, 
                        description,
-                       authorID, 
+                       creatorID, 
                        URI, 
                        thumbnailURI,
                        originalURL, 
@@ -46,7 +46,7 @@ if ($vJSON) {
                                 ) VALUES (
                        :name,
                        :description,
-                       :authorID, 
+                       :creatorID, 
                        :URI, 
                        :thumbnailURI,
                        :originalURL, 
@@ -60,7 +60,7 @@ if ($vJSON) {
     $db->query($sql);
     $db->bind(":name", $vInfo["fulltitle"]);
     $db->bind(":description", $vInfo["description"]);
-    $db->bind(":authorID", $authorID);
+    $db->bind(":creatorID", $creatorID);
     $db->bind(":URI", $vInfo["_filename"]);
     $db->bind(":thumbnailURI", $thumbFilePath);
     $db->bind(":originalURL", $_POST["url"]);
@@ -73,7 +73,7 @@ if ($vJSON) {
     $db->execute();
 
     // Download video
-//    exec("youtube-dl --config-location '" . ROOT . "config/youtube-dl/mp4' " . $_POST["url"] . " > /dev/null &");
+    exec("youtube-dl --config-location '" . ROOT . "config/youtube-dl/mp4' " . $_POST["url"] . " > /dev/null &");
     $return = "Media downloaded!";
 }
 

@@ -102,10 +102,19 @@ Initialisation
 .videoThumbnail-main .videoThumbnailContainer {
   position: relative;
 }
+.videoThumbnail-main .videoThumbnailContainer .videoThumbnail-afterContainer {
+  position: relative;
+  padding-top: 56.25%;
+}
 .videoThumbnail-main .videoThumbnailContainer .videoThumbnail-afterContainer .videoThumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   object-fit: cover;
   width: 100%;
-  max-height: 202px;
+  height: 100%;
 }
 .videoThumbnail-main .videoThumbnailContainer .videoThumbnail-afterContainer time {
   color: #FFF;

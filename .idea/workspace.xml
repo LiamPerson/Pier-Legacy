@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/PdpZ43Wdoi4.thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/WZ-t1Grv64g.thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/j9YqYQkyFXE.thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/author/abstract-user-flat-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/creator/abstract-user-flat-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/AAssk2N_oPk.thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/placeholder.thumb.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ajax/download_video.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/download_video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/youtube-dl/default/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/default/youtube-dl.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/youtube-dl/mp3/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/mp3/youtube-dl.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/_startApp.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/_startApp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/thumbnail/dl_videos/k4TRr2_PENI.0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/Core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/Youtube.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Youtube.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects/DL_Videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/DL_Videos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
         <item name="@192.168.8.77" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="pier: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="authors_dlvideos: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="creators_dlvideos: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -112,7 +108,7 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ajax" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/thumbnail/author" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
   </component>
@@ -125,11 +121,11 @@
       <recent name="D:\xampp\htdocs\Pier\core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\author" />
+      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\creator" />
       <recent name="D:\xampp\htdocs\Pier\Ajax" />
       <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
       <recent name="D:\xampp\htdocs\Pier\dist\css" />
-      <recent name="D:\xampp\htdocs\Pier" />
-      <recent name="D:\xampp\htdocs\Pier\config\youtube-dl\default" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -141,16 +137,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@192.168.8.77" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@192.168.8.77" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2c48b274" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@192.168.8.77" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@61f873f7" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -181,7 +167,7 @@
       <workItem from="1586695727957" duration="503000" />
       <workItem from="1586755815523" duration="20110000" />
       <workItem from="1586940830651" duration="16553000" />
-      <workItem from="1587030953996" duration="11991000" />
+      <workItem from="1587030953996" duration="17816000" />
     </task>
     <servers />
   </component>
@@ -232,19 +218,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959482175" />
-    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587043410688">
+    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587044254068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587043410688" />
+    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587044254068" />
     <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586953875435" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1585695818362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1585695818362" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587035843968">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587046667235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587035843968" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587046667235" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959469479" />
   </component>
 </project>
