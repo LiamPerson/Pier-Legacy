@@ -9,3 +9,10 @@ define("PORT", "3306");
 define("DB_NAME","pier");
 define("DB_USERNAME","yelo");
 define("DB_PASSWORD","7310");
+
+// File Locations
+define("IMG_DIR", "img/");
+// Where to save downloaded video thumbnails in IMG_DIR
+define("THUMBNAIL_DL_VIDEOS_DIR","thumbnail/dl_videos/");
+// Where to save downloaded video author thumbnails in IMG_DIR
+define("THUMBNAIL_CREATOR_DIR","thumbnail/creator/");

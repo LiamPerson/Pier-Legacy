@@ -1,6 +1,10 @@
 <?php
 include "core/_startApp.php";
-//s(get_included_files());
+global $db;
+$db->query("SELECT * FROM dl_videos");
+$db->execute();
+s($db->resultset());
+
 ?>
 <head>
     <title>Pier</title>
@@ -101,26 +105,28 @@ include "core/_startApp.php";
                 }
             }).done(function (data) {
                 console.log(data);
+
+                setTimeout(() => {
+                    dlButton.prop("disabled", false);
+                    dlButton.html(dlIcon);
+                    displaySuccess("Media added!", alertObj);
+                    dlURLObj.val("");
+
+                    if(timer) {
+                        clearTimeout(timer);
+                        timer = null;
+                    }
+
+                    timer = setTimeout(()=> {
+                        alertObj.slideUp();
+                    }, 6000)
+
+                }, 3000)
             });
 
             // Enable the button again
 
-            setTimeout(() => {
-                dlButton.prop("disabled", false);
-                dlButton.html(dlIcon);
-                displaySuccess("Media added!", alertObj);
-                dlURLObj.val("");
 
-                if(timer) {
-                    clearTimeout(timer);
-                    timer = null;
-                }
-
-                timer = setTimeout(()=> {
-                    alertObj.slideUp();
-                }, 6000)
-
-            }, 3000)
 
         } else {
             // displayError("Invalid URL", alertObj);

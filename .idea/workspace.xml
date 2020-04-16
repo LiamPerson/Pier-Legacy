@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ajax/download_media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Templates/Pages/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/k4TRr2_PENI.0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objects/Database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objects/Youtube.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ajax/download_video.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/download_video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/_startApp.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/_startApp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/Core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects/DL_Videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/DL_Videos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,13 @@
         <item name="@192.168.8.77" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="pier: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@192.168.8.77" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="pier: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="authors_dlvideos: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -100,7 +109,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Ajax" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -111,11 +120,11 @@
       <recent name="D:\xampp\htdocs\Pier\config\youtube-dl\default" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\Pier\objects" />
       <recent name="D:\xampp\htdocs\Pier\stored" />
       <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
       <recent name="D:\xampp\htdocs\Pier" />
       <recent name="D:\xampp\htdocs\Pier\core" />
-      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\creator" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -151,7 +160,8 @@
       <workItem from="1586689569386" duration="4053000" />
       <workItem from="1586695727957" duration="503000" />
       <workItem from="1586755815523" duration="20110000" />
-      <workItem from="1586940830651" duration="4978000" />
+      <workItem from="1586940830651" duration="16553000" />
+      <workItem from="1587030953996" duration="279000" />
     </task>
     <servers />
   </component>
@@ -162,6 +172,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#Inspections" timestamp="1586959191804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959191804" />
     <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586695811208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -174,33 +188,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="299" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586758673544" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1586695824119">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1586959323744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586695824119" />
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959323744" />
     <state x="787" y="335" key="NewPhpClassDialog" timestamp="1586772217847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="787" y="335" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586772217847" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586778785426">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586952593733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586778785426" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1586773224704">
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586952593733" />
+    <state x="443" y="325" key="SettingsEditor" timestamp="1586959487502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586773224704" />
-    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586756423149">
+    <state x="443" y="325" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959487502" />
+    <state width="200" height="441" key="SqlResolveConfigurable" timestamp="1586959482175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586756423149" />
+    <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959482175" />
+    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586953875435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586953875435" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1585695818362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1585695818362" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586946166030">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586959469479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586946166030" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959469479" />
   </component>
 </project>
