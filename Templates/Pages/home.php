@@ -7,11 +7,11 @@
         foreach ($dlVids as $vid) {
             $vidCreator = DL_Videos::_getCreatorInfo_byCreatorID($vid["creatorID"]);
             ?>
-            <div data-href="#" class="col-md-6 col-xl-3 videoThumbnail-main">
+            <div data-href="watch?v=<?php echo $vid["ID"]; ?>" class="col-md-6 col-xl-3 videoThumbnail-main" onclick="goToHREF(this);">
                 <div class="videoThumbnailContainer">
                     <div class="videoThumbnail-afterContainer">
                         <img src="<?php echo $vid["thumbnailURI"]; ?>" class="videoThumbnail" alt="Thumbnail for video: <?php echo $vid["name"]; ?>">
-                        <time><?php echo $vid["length"]; ?></time>
+                        <time><?php echo seconds_to_timestamp($vid["length"]); ?></time>
                     </div>
                 </div>
                 <div class="row mt-3">

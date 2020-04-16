@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Templates/Pages/watch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/0JVwfJGfins.thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/eTYcMB6Yhe8.thumb.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajax/download_video.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/download_video.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/Pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Pages/watch.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/watch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +79,7 @@
       <list>
         <option value="package.json" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -131,6 +137,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@192.168.8.77" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@192.168.8.77" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@11bfcb88" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -160,7 +171,7 @@
       <workItem from="1586695727957" duration="503000" />
       <workItem from="1586755815523" duration="20110000" />
       <workItem from="1586940830651" duration="16553000" />
-      <workItem from="1587030953996" duration="18897000" />
+      <workItem from="1587030953996" duration="21399000" />
     </task>
     <servers />
   </component>
@@ -212,10 +223,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586959482175" />
-    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587044254068">
+    <state x="946" y="208" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587051329457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587044254068" />
+    <state x="946" y="208" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587051329457" />
     <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1586953875435" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1585695818362">
       <screen x="0" y="0" width="1920" height="1040" />

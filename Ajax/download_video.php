@@ -67,7 +67,7 @@ if ($vJSON) {
     $db->bind(":webpage_url", $vInfo["webpage_url"]);
     $db->bind(":siteID", $videoID);
     $db->bind(":category", $vInfo["categories"][0]);
-    $db->bind(":length", seconds_to_timestamp($vInfo["duration"]));
+    $db->bind(":length", $vInfo["duration"]);
     $db->bind(":tags", json_encode($vInfo["tags"]));
     $db->bind(":dateUploaded", string_to_timestamp($vInfo["upload_date"]));
     $db->execute();

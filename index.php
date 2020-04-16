@@ -12,7 +12,7 @@ include "core/_startApp.php";
 
 <!--Main Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://pier/">Pier</a>
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Pier</a>
     <form class="w-100 p-0 m-0" action="#" id="searchSiteForm" method="get">
         <div class="input-group">
             <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
@@ -23,7 +23,7 @@ include "core/_startApp.php";
     </form>
     <ul class="navbar-nav px-3 d-none d-lg-block">
         <li class="nav-item text-nowrap">
-            <a href="http://pier/admin" class="nav-link">Admin</a>
+            <a href="/admin" class="nav-link">Admin</a>
         </li>
     </ul>
 </nav>
@@ -67,6 +67,7 @@ include "core/_startApp.php";
 <script src="/dist/js/jquery-3.4.1.min.js"></script>
 <script src="/dist/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 <script src="/dist/bootstrap-4.0.0-dist/js/popper.min.js"></script>
+<script src="/dist/js/core.js"></script>
 
 <script type="text/javascript">
     let timer = null;
