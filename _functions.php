@@ -34,7 +34,7 @@ function include_directory($path) {
 
 function seconds_to_timestamp($s): string {
     $timestamp = gmdate("H:i:s", $s);
-    while(substr($timestamp, 0, 2) == "00")
+    while (substr($timestamp, 0, 2) == "00")
         $timestamp = substr($timestamp, 3);
     return $timestamp;
 }
@@ -77,4 +77,10 @@ function time_ago($datetime, $max_units = 1) {
     }
 
     return 'Just now';
+}
+
+function redirect($url = null): void {
+    if (!$url)
+        $url = $_SERVER["HTTP_REFERER"];
+    header("Location: " . $url);
 }

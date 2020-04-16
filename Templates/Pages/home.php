@@ -7,7 +7,7 @@
         foreach ($dlVids as $vid) {
             $vidCreator = DL_Videos::_getCreatorInfo_byCreatorID($vid["creatorID"]);
             ?>
-            <div data-href="#" class="col-md-3 videoThumbnail-main">
+            <div data-href="#" class="col-md-6 col-xl-3 videoThumbnail-main">
                 <div class="videoThumbnailContainer">
                     <div class="videoThumbnail-afterContainer">
                         <img src="<?php echo $vid["thumbnailURI"]; ?>" class="videoThumbnail" alt="Thumbnail for video: <?php echo $vid["name"]; ?>">
