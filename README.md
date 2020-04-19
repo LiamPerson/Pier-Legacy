@@ -38,7 +38,7 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
     <li><code>sudo service apache2 restart</code></li>
 </ul>
 <strong>Apache2 hosts from /var/www/html/ on Raspbian</strong>
-<p>You will need to make sure git is installed for the above installation</p>
+<p>You will need to make sure git is installed for the above installation. Installed by default but just in case: <code>sudo apt install git</code></p>
 
 <h2>Troubleshooting</h2>
 <ul>
