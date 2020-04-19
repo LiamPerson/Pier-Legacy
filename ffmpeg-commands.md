@@ -17,3 +17,5 @@
   <li><code>make -j4</code></li>
   <li><code>sudo make install</code></li>
 </ul>
+
+All credit to <strong>JolleJolles</strong>. His version with description <a href="https://github.com/JolleJolles/pirecorder/wiki/Installing-ffmpeg-on-Raspberry-Pi-with-h264-support">here</a>.
