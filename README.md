@@ -21,7 +21,7 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <li><a href="https://github.com/JolleJolles/pirecorder/wiki/Installing-ffmpeg-on-Raspberry-Pi-with-h264-support">Install ffmpeg on Raspbian</a> with guide,<a href="https://github.com/YeloPartyHat/Pier/blob/master/ffmpeg-commands.md"> or follow a command List</a></li>
 <li>Install MariaDB Server <code>sudo apt install mariadb-server php-mysql -y</code> </li>
     <li><strong>DO NOT SET ROOT PASSWORD! IF YOU HAVE CHANGED ROOT PASSWORD MODIFY IN config/config.php (DB_USERNAME & DB_PASSWORD)</strong></li>
-    <li>Remove default files and clone contents of repository to to /var/www/html <code>cd /var/www/html</code <code>sudo rm index.html</code> <code>git clone https://github.com/YeloPartyHat/Pier.git .</code></li>
+    <li>Remove default files and clone contents of repository to to /var/www/html <code>cd /var/www/html</code> <code>sudo rm index.html</code> <code>git clone https://github.com/YeloPartyHat/Pier.git .</code></li>
     
 </ul>
 <strong>Apache2 hosts from /var/www/html/ on Raspbian</strong>
