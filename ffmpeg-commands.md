@@ -1,4 +1,4 @@
-# Installing h264 & ffmpeg on raspberry pi 4 model B command list
+# Installing h264 & ffmpeg on Raspberry Pi 4 model B command list
 <h2>Install h264</h2>
 <ul>
   <li><code>cd ~</code></li>
