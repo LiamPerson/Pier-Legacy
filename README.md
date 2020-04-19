@@ -22,18 +22,18 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <li>Install MariaDB Server <code>sudo apt install mariadb-server php-mysql -y</code> </li>
     <li><strong>DO NOT SET ROOT PASSWORD! IF YOU HAVE CHANGED ROOT PASSWORD MODIFY IN config/config.php (DB_USERNAME & DB_PASSWORD)</strong></li>
     <li>Remove default files and clone contents of repository to to /var/www/html <code>cd /var/www/html</code> <code>sudo rm index.html</code> <code>sudo git clone https://github.com/YeloPartyHat/Pier.git .</code></li>
-    <li><strong>Now you will need to enable URL override (for apache's .htaccess file)</strong></li>
-    <li><code>sudo nano /etc/apache2/apache2.conf</code> This will open up an editor. Scroll down until you see
+</ul>
+    
+<h6 id="htaccessSetup">Now you will need to enable URL override (for apache's .htaccess file)</h3>
+<ul>
+    <li><code>sudo nano /etc/apache2/apache2.conf</code> This will open up an editor. Scroll down until you see:
         <br>
-        <code>
-            <Directory /var/www/>
-                Options Indexes FollowSymLinks
-                AllowOverride None
-                Require all granted
-            </Directory>
-        </code>
-        <br>
-        and change <code>AllowOverride None</code> to <code>AllowOverride All</code>
+        <pre>&#60;Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+&#60;/Directory></pre>
+        ...and change <code>AllowOverride None</code> to <code>AllowOverride All</code>
     </li>
     <li><code>sudo a2enmod rewrite</code></li>
     <li><code>sudo service apache2 restart</code></li>
@@ -45,6 +45,7 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <ul>
 <li>Make sure config file locations are correct.</li>
 <li>Make sure username and password are set correctly in config.php</li>
+<li>Error 500? <a href="#htaccessSetup">Make sure you set up .htaccess correctly</a></li>
 </ul>
 
 If you want to mount external hard drive(s) to folders check out this guide https://www.htpcguides.com/properly-mount-usb-storage-raspberry-pi/ then create a symbolic link with the folder name to the folder in the mounted drive using <code>ln -s /var/www/html/stored/folder /mnt/storage/folder</code>
