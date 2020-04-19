@@ -45,8 +45,8 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
     <li>Make sure config file locations are correct.</li>
     <li>Make sure username and password are set correctly in config.php</li>
     <li>Error 500? <a href="#htaccessSetup">Make sure you set up .htaccess correctly</a></li>
-    <li>Can't connect to database? Make sure the config/config.php match your MariaDB settings. <strong>Default:</strong> <code>define("DB_USERNAME","yelo");</code>
-    <code>define("DB_PASSWORD","7310");</code>
+    <li>Can't connect to database? Make sure the config/config.php match your MariaDB settings. <strong>Default:</strong> <code>define("DB_USERNAME","root");</code>
+    <code>define("DB_PASSWORD","");</code>
     </li>
 </ul>
 
