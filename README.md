@@ -22,7 +22,21 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <li>Install MariaDB Server <code>sudo apt install mariadb-server php-mysql -y</code> </li>
     <li><strong>DO NOT SET ROOT PASSWORD! IF YOU HAVE CHANGED ROOT PASSWORD MODIFY IN config/config.php (DB_USERNAME & DB_PASSWORD)</strong></li>
     <li>Remove default files and clone contents of repository to to /var/www/html <code>cd /var/www/html</code> <code>sudo rm index.html</code> <code>sudo git clone https://github.com/YeloPartyHat/Pier.git .</code></li>
-    
+    <li><strong>Now you will need to enable URL override (for apache's .htaccess file)</strong></li>
+    <li><code>sudo nano /etc/apache2/apache2.conf</code> This will open up an editor. Scroll down until you see
+        <br>
+        <code>
+            <Directory /var/www/>
+                Options Indexes FollowSymLinks
+                AllowOverride None
+                Require all granted
+            </Directory>
+        </code>
+        <br>
+        and change <code>AllowOverride None</code> to <code>AllowOverride All</code>
+    </li>
+    <li><code>sudo a2enmod rewrite</code></li>
+    <li><code>sudo service apache2 restart</code></li>
 </ul>
 <strong>Apache2 hosts from /var/www/html/ on Raspbian</strong>
 <p>You will need to make sure git is installed for the above installation</p>
