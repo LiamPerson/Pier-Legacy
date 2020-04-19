@@ -18,7 +18,7 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <code>sudo apt-get install python-pip</code>
 <code>sudo pip install youtube-dl</code>
 </li>
-<li><a href="https://github.com/JolleJolles/pirecorder/wiki/Installing-ffmpeg-on-Raspberry-Pi-with-h264-support">Installing ffmpeg on Raspbian</a> or <a href="https://github.com/YeloPartyHat/Pier/blob/master/ffmpeg-commands.md">Command List</a></li>
+<li><a href="https://github.com/JolleJolles/pirecorder/wiki/Installing-ffmpeg-on-Raspberry-Pi-with-h264-support">Install ffmpeg on Raspbian</a> with guide, or: <a href="https://github.com/YeloPartyHat/Pier/blob/master/ffmpeg-commands.md">Command List</a></li>
 <li>Install MariaDB Server <code>sudo apt install mariadb-server php-mysql -y</code> </li>
     <li><strong>DO NOT SET ROOT PASSWORD! IF YOU HAVE CHANGED ROOT PASSWORD MODIFY IN config/config.php (DB_USERNAME & DB_PASSWORD)</strong></li>
     <li>Clone to /var/www/html <code>cd /var/www/html</code> <code>git clone https://github.com/YeloPartyHat/Pier.git</code></li>
