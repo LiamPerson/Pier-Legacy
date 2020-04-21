@@ -34,13 +34,19 @@ function include_directory($path) {
 
 function seconds_to_timestamp($s): string {
     $timestamp = gmdate("H:i:s", $s);
-    while (substr($timestamp, 0, 2) == "00")
-        $timestamp = substr($timestamp, 3);
+//    while (substr($timestamp, 0, 2) == "00")
+//      $timestamp = substr($timestamp, 3);
+    if (substr($timestamp, 0, 2) == "00")
+            $timestamp = substr($timestamp, 4);
     return $timestamp;
 }
 
 function string_to_timestamp($s): string {
     return date("Y-m-d H:i:s", strtotime($s));
+}
+
+function strtodate($s) {
+    return date('d M Y', strtotime($s));
 }
 
 function time_ago($datetime, $max_units = 1) {
@@ -83,4 +89,21 @@ function redirect($url = null): void {
     if (!$url)
         $url = $_SERVER["HTTP_REFERER"];
     header("Location: " . $url);
+}
+
+function absURI_to_relURI(string $URI) {
+    $root = realpath("");
+    $rootCharLen = strlen($root);
+    $rootPos = strpos($URI, $root);
+    $path = $URI;
+    if($rootPos !== false)
+        $path = substr($URI, strpos($URI,$root) + $rootCharLen + 1);
+    return $path;
+}
+
+function shortenString(string $string, int $maxLength) : string {
+    $string = substr($string,0,$maxLength - 3);
+    if(strlen($string) >= $maxLength - 3)
+        $string .= '...';
+    return $string;
 }

@@ -35,8 +35,9 @@ include "core/_startApp.php";
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
-                    <li class="nav-item active"><a href="videos" class="nav-link"><i class="fas fa-video"></i> Videos</a></li>
-                    <li class="nav-item"><a href="movies" class="nav-link"><i class="fas fa-film"></i> Movies</a></li>
+                    <li class="nav-item active"><a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item active"><a href="/videos" class="nav-link"><i class="fas fa-video"></i> Videos</a></li>
+                    <li class="nav-item"><a href="/movies" class="nav-link"><i class="fas fa-film"></i> Movies</a></li>
                 </ul>
             </div>
 

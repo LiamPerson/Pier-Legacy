@@ -2,7 +2,14 @@
 global $incFile;
 
 $request = $_SERVER["REQUEST_URI"];
-$slugs = array_filter(explode("/", $request));
+
+$GETLoc = strpos($request,"?");
+
+$reqStart = substr($request, 0, $GETLoc);
+$reqGET = substr($request, $GETLoc);
+
+$slugs = array_filter(explode("/", $reqStart));
+
 
 $actionObj = "";
 $actionFunction = "";
@@ -45,8 +52,6 @@ if (isset($slugs[1]) && !empty($slugs[1])) {
 
 $incFile = realpath("") . "/Templates/Pages/home.php";
 
-//s($slugs);
-//s($gotoLoc);
 
 if(isset($gotoLoc) && !empty($gotoLoc)) {
     $incFile = "Templates/Pages/". $gotoLoc . ".php";

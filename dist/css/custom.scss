@@ -34,6 +34,8 @@ $white: #FFF;
 $black: #000;
 $dark: #212121;
 
+$textCol: $black;
+
 $primary: #00F;
 
 // Transitions
@@ -75,6 +77,9 @@ $moderate: .5s;
 
 * {
   font-size: $font-size-standard;
+  &:not(.fa, .fas), {
+    color: $textCol;
+  }
 }
 
 .bottom-dl_video {
@@ -83,6 +88,24 @@ $moderate: .5s;
   width: 100%;
   max-width: calc(16.666667% - #{$col-xPadding*2});
   display: block;
+}
+
+
+/***
+ *    .-. . .-.  .--.  .---.  .---. .-. .-.
+ *    | |/ \| | / {} \{_   _}/  ___}| {_} |
+ *    |  .'.  |/  /\  \ | |  \     }| { } |
+ *    `-'   `-'`-'  `-' `-'   `---' `-' `-'
+ == WATCH (watch page)
+ */
+
+.title-sub {
+  color: rgba($textCol, 0.8);
+  font-size: $font-size-standard * 1.1;
+}
+
+.descriptionOffset {
+  padding-left: calc(48px + (#{$col-xPadding} * 2) + 1rem);
 }
 
 
@@ -156,19 +179,6 @@ $moderate: .5s;
     }
   }
 
-  .creatorThumbnail {
-    object-fit: contain;
-    width: 100%;
-
-    min-width: 36px;
-    min-height: 36px;
-
-    max-width: 36px;
-    max-height: 36px;
-
-    border-radius: 50%;
-  }
-
   .videoThumbnail-Title {
     color: $black;
     font-size: $font-size-standard * 1.18;
@@ -191,6 +201,13 @@ $moderate: .5s;
   margin-bottom: 15px;
 }
 
+.creatorThumbnail {
+  object-fit: contain;
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+}
 
 /***
  *     _______                         __                 __
@@ -212,6 +229,10 @@ $moderate: .5s;
 //  position: static;
 //  bottom: 0;
 //}
+h1,
+.h1 {
+  font-size: $font-size-standard*1.6;
+}
 
 .btn-dark {
   background-color: rgba($white, .08);
