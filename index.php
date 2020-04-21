@@ -12,8 +12,8 @@ include "core/_startApp.php";
 
 <!--Main Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Pier</a>
-    <form class="w-100 p-0 m-0" action="#" id="searchSiteForm" method="get">
+    <a class="navbar-brand col-2 col-sm-3 col-md-2 mr-0" href="/">Pier</a>
+    <form class="col p-0 m-0" action="#" id="searchSiteForm" method="get">
         <div class="input-group">
             <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
             <div class="input-group-append">
@@ -21,8 +21,8 @@ include "core/_startApp.php";
             </div>
         </div>
     </form>
-    <ul class="navbar-nav px-3 d-none d-lg-block">
-        <li class="nav-item text-nowrap">
+    <ul class="navbar-nav px-3 d-none d-xl-block">
+        <li class="nav-item text-nowrap text-right">
             <a href="/admin" class="nav-link">Admin</a>
         </li>
     </ul>

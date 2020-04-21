@@ -7,7 +7,7 @@ $vidCreator = DL_Videos::_getCreatorInfo_byCreatorID($vInfo["creatorID"]);
 
 <section>
     <div class="row mt-3">
-        <div class="col-md-9">
+        <div class="col-xl-9">
             <div class="row">
                 <?php absURI_to_relURI($vInfo["URI"]); ?>
                 <video class="col-12" controls autoplay>
@@ -31,7 +31,7 @@ $vidCreator = DL_Videos::_getCreatorInfo_byCreatorID($vInfo["creatorID"]);
 
             </div>
         </div>
-        <div class="d-none d-md-block col-md-3">
+        <div class="col-xl-3">
                 <?php
                 $dlVids = DL_Videos::_getLatestVideos();
                 foreach ($dlVids as $vid) {

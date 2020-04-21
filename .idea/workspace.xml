@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/6fq_DRVlUHg.thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/OYIjHeM7PPA.thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/dwDns8x3Jb4.thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/n716gG6oK-0.thumb.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax/download_video.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/download_video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/Pages/watch.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/watch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/youtube-dl/mp4/youtube-dl.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/DL_Videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/DL_Videos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +161,7 @@
       <workItem from="1587300634964" duration="975000" />
       <workItem from="1587309284560" duration="1297000" />
       <workItem from="1587469263121" duration="142000" />
-      <workItem from="1587469554398" duration="8458000" />
+      <workItem from="1587469554398" duration="9056000" />
     </task>
     <servers />
   </component>
