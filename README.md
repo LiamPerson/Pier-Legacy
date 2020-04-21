@@ -1,5 +1,6 @@
 # Pier - Raspberry Pi Home Server
 Made for use with Raspberry Pi 4 Model B (though should work on other devices)
+<h4>Connect to your Pier server by going to it's IP address in the browser of your choice e.g. in Google Chrome, top bar <code>192.168.8.77/</code> or simply go to the URL: <code>raspberrypi/</code></h4>
 <h2>Dependencies:</h2>
 <ul>
     <li>Apache/2.4.38 (Raspbian)</li>
@@ -38,15 +39,15 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
     <li><code>sudo service apache2 restart</code></li>
 </ul>
 <strong>Apache2 hosts from /var/www/html/ on Raspbian</strong>
-<p>You will need to make sure git is installed for the above installation</p>
+<p>You will need to make sure git is installed for the above installation. Installed by default but just in case: <code>sudo apt install git</code></p>
 
 <h2>Troubleshooting</h2>
 <ul>
     <li>Make sure config file locations are correct.</li>
     <li>Make sure username and password are set correctly in config.php</li>
     <li>Error 500? <a href="#htaccessSetup">Make sure you set up .htaccess correctly</a></li>
-    <li>Can't connect to database? Make sure the config/config.php match your MariaDB settings. <strong>Default:</strong> <code>define("DB_USERNAME","yelo");</code>
-    <code>define("DB_PASSWORD","7310");</code>
+    <li>Can't connect to database? Make sure the config/config.php match your MariaDB settings. <strong>Default:</strong> <code>define("DB_USERNAME","root");</code>
+    <code>define("DB_PASSWORD","");</code>
     </li>
 </ul>
 
