@@ -4,9 +4,12 @@ global $incFile;
 $request = $_SERVER["REQUEST_URI"];
 
 $GETLoc = strpos($request,"?");
-
-$reqStart = substr($request, 0, $GETLoc);
 $reqGET = substr($request, $GETLoc);
+if($GETLoc)
+    $reqStart = substr($request, 0, $GETLoc);
+else
+    $reqStart = substr($request, 0);
+
 
 $slugs = array_filter(explode("/", $reqStart));
 
@@ -45,6 +48,7 @@ if (isset($slugs[1]) && !empty($slugs[1])) {
 
 }
 
+//s($slugs);
 //s($actionObj);
 //s($actionFunction);
 //s($ajax);
