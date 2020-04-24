@@ -103,6 +103,7 @@ Initialisation
   cursor: pointer;
   transition: 0.2s;
   border: 1px solid transparent;
+  margin-bottom: 15px;
 }
 .videoThumbnail-main:hover .videoThumbnail-afterContainer:after {
   content: "⯈ PLAY VIDEO";
@@ -152,6 +153,64 @@ Initialisation
   color: rgba(0, 0, 0, 0.8);
 }
 .videoThumbnail-main .videoThumbnail-AddedDate {
+  margin: 0;
+}
+
+.movieThumbnail-main {
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+}
+.movieThumbnail-main:hover .movieThumbnail-afterContainer:after {
+  content: "⯈ PLAY MOVIE";
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16.52px;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.movieThumbnail-main .movieThumbnailContainer {
+  position: relative;
+}
+.movieThumbnail-main .movieThumbnailContainer .movieThumbnail-afterContainer {
+  position: relative;
+  width: 210px;
+  height: 302px;
+}
+.movieThumbnail-main .movieThumbnailContainer .movieThumbnail-afterContainer .movieThumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.movieThumbnail-main .movieThumbnailContainer .movieThumbnail-afterContainer time {
+  color: #FFF;
+  font-size: 13.3px;
+  position: absolute;
+  bottom: 7.5px;
+  right: 7.5px;
+  padding: 0 3px;
+  background: #000;
+}
+.movieThumbnail-main .movieThumbnail-Title {
+  color: #000;
+  font-size: 16.52px;
+}
+.movieThumbnail-main .movieThumbnail-CreatorName {
+  color: rgba(0, 0, 0, 0.8);
+}
+.movieThumbnail-main .movieThumbnail-AddedDate {
   margin: 0;
 }
 
