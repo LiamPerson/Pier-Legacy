@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Templates/Pages/movie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Pages/movies.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/movies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/Movies.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Movies.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +108,7 @@
       <workItem from="1587469554398" duration="9081000" />
       <workItem from="1587478768747" duration="287000" />
       <workItem from="1587703454001" duration="2110000" />
-      <workItem from="1587705953143" duration="2400000" />
+      <workItem from="1587705953143" duration="2775000" />
     </task>
     <servers />
   </component>
@@ -194,11 +191,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1587469785016" />
-    <state x="592" y="157" width="793" height="631" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587708111629">
+    <state x="592" y="157" width="793" height="631" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587708726649">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="946" y="208" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587051329457" />
-    <state x="592" y="157" width="793" height="631" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1587708111629" />
+    <state x="592" y="157" width="793" height="631" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1587708726649" />
     <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1587309969929" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1587469558490">
       <screen x="0" y="0" width="1920" height="1040" />
