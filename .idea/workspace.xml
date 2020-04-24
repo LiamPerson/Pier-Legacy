@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/movies/icon_hacksaw_poster_2016.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/movies/marvel_avengers_poster_2012.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/movies/placeholder.thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objects/Movies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Templates/Pages/movie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Pages/videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/videos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Pages/movies.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/movies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects/Movies.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Movies.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,24 +59,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Templates/Pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Pier\Templates\Pages" />
+      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\author" />
+      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\creator" />
+      <recent name="D:\xampp\htdocs\Pier\Ajax" />
+      <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\Pier" />
       <recent name="D:\xampp\htdocs\Pier\objects" />
       <recent name="D:\xampp\htdocs\Pier\stored" />
       <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
       <recent name="D:\xampp\htdocs\Pier\core" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\author" />
-      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\creator" />
-      <recent name="D:\xampp\htdocs\Pier\Ajax" />
-      <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
-      <recent name="D:\xampp\htdocs\Pier\dist\css" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -119,7 +111,7 @@
       <workItem from="1587469554398" duration="9081000" />
       <workItem from="1587478768747" duration="287000" />
       <workItem from="1587703454001" duration="2110000" />
-      <workItem from="1587705953143" duration="1352000" />
+      <workItem from="1587705953143" duration="2400000" />
     </task>
     <servers />
   </component>
@@ -202,10 +194,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1587469785016" />
-    <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587309969929">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="592" y="157" width="793" height="631" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587708111629">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="946" y="208" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587051329457" />
+    <state x="592" y="157" width="793" height="631" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1587708111629" />
     <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1587309969929" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1587469558490">
       <screen x="0" y="0" width="1920" height="1040" />

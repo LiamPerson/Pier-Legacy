@@ -19,4 +19,14 @@ class Movies {
 
         return $results;
     }
+
+    public static function _getInfo_FromID(int $ID) {
+        global $db;
+
+        $sql = "SELECT * FROM movies WHERE ID=:ID";
+        $db->query($sql);
+        $db->bind(":ID", $ID);
+        $db->execute();
+        return $db->single();
+    }
 }
