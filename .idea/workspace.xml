@@ -20,18 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Templates/Pages/movie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/movies/icon_hacksaw_poster_2016.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/movies/marvel_avengers_poster_2012.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/thumbnail/movies/placeholder.thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objects/Movies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pier20200424.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Pages/movies.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/movies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Pages/videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Pages/videos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.scss" afterDir="false" />
@@ -269,11 +258,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1587469558490" />
-    <state x="545" y="219" width="672" height="659" key="search.everywhere.popup" timestamp="1587706607517">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588149395548">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587046667235" />
     <state x="545" y="219" width="672" height="659" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1587706607517" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1587476891576" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1588149395548" />
   </component>
 </project>
