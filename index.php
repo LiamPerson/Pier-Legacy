@@ -65,7 +65,7 @@ include "core/_startApp.php";
 </article>
 </body>
 
-<script src="/dist/js/jquery-3.4.1.min.js"></script>
+<script src="/dist/js/jquery-3.5.0.js"></script>
 <script src="/dist/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 <script src="/dist/bootstrap-4.0.0-dist/js/popper.min.js"></script>
 <script src="/dist/js/core.js"></script>

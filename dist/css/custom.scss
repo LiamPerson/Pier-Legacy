@@ -226,8 +226,12 @@ $moderate: .5s;
 
     .movieThumbnail-afterContainer {
       position: relative;
-      width: 210px;
-      height: 302px;
+      //width: 210px;
+      //height: 302px;
+
+      width: 100%;
+      height: 364px;
+
       .movieThumbnail {
         position: absolute;
         top: 0;

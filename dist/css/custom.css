@@ -181,8 +181,8 @@ Initialisation
 }
 .movieThumbnail-main .movieThumbnailContainer .movieThumbnail-afterContainer {
   position: relative;
-  width: 210px;
-  height: 302px;
+  width: 100%;
+  height: 364px;
 }
 .movieThumbnail-main .movieThumbnailContainer .movieThumbnail-afterContainer .movieThumbnail {
   position: absolute;
