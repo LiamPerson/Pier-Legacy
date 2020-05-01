@@ -34,8 +34,6 @@ function include_directory($path) {
 
 function seconds_to_timestamp($s): string {
     $timestamp = gmdate("H:i:s", $s);
-//    while (substr($timestamp, 0, 2) == "00")
-//      $timestamp = substr($timestamp, 3);
     if (substr($timestamp, 0, 2) == "00")
             $timestamp = substr($timestamp, 4);
     return $timestamp;
@@ -47,6 +45,10 @@ function string_to_timestamp($s): string {
 
 function strtodate($s) {
     return date('d M Y', strtotime($s));
+}
+
+function string_to_year($s): string {
+    return date('Y', strtotime($s));
 }
 
 function time_ago($datetime, $max_units = 1) {

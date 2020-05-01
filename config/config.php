@@ -19,3 +19,5 @@ define("IMG_DIR", "img/");
 define("THUMBNAIL_DL_VIDEOS_DIR","thumbnail/dl_videos/");
 // Where to save downloaded video author thumbnails in IMG_DIR
 define("THUMBNAIL_CREATOR_DIR","thumbnail/creator/");
+// Where movie poster thumbnails are located in IMG_DIR
+define("THUMBNAIL_MOVIES_DIR","thumbnail/movies/");
