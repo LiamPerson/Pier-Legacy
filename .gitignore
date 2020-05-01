@@ -1,13 +1,10 @@
 .git
 .idea
-stored/downloads/youtubedl_video
-stored/downloads/youtubedl_audio
-stored/shows
-stored/movies
-stored/shared
-stored/flash
-stored/games
-stored/music
+workspace.xml
+/stored/
+/img/
 
 !empty.txt
 !.gitignore
+!placeholder.thumb.jpg
+!abstract-user-flat-4.svg

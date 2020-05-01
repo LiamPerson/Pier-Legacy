@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da2dbc7-06df-41e6-b63d-d44753493cde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/dl_videos/IdbFaUbaoO0.thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/thumbnail/movies/220px-Pineapple_Express_Poster.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/custom.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,19 +117,19 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\Pier\img\thumbnail\movies" />
+      <recent name="D:\xampp\htdocs\Pier" />
+      <recent name="D:\xampp\htdocs\Pier\objects" />
+      <recent name="D:\xampp\htdocs\Pier\stored" />
+      <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Pier\Templates\Pages" />
       <recent name="D:\xampp\htdocs\Pier\img\thumbnail\author" />
       <recent name="D:\xampp\htdocs\Pier\img\thumbnail\creator" />
       <recent name="D:\xampp\htdocs\Pier\Ajax" />
       <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\Pier" />
-      <recent name="D:\xampp\htdocs\Pier\objects" />
-      <recent name="D:\xampp\htdocs\Pier\stored" />
-      <recent name="D:\xampp\htdocs\Pier\Templates\Pages" />
-      <recent name="D:\xampp\htdocs\Pier\core" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -209,10 +209,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1587469314565" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587041585264">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588160039196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/-1701.-1080.1858.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1587041585264" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/-1701.-1080.1858.1080@0.0.1920.1040" timestamp="1588160039196" />
     <state x="520" y="290" key="EditFileWatcherDialog" timestamp="1587706010902">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
