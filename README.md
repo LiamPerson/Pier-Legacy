@@ -49,6 +49,8 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
     <li>Can't connect to database? Make sure the config/config.php match your MariaDB settings. <strong>Default:</strong> <code>define("DB_USERNAME","root");</code>
     <code>define("DB_PASSWORD","");</code>
     </li>
+    <li>Still can't connect to database? Make sure your user as <code>DB_USERNAME</code> and <code>DB_PASSWORD</code> are set up correctly... <a href="https://chartio.com/resources/tutorials/how-to-grant-all-privileges-on-a-database-in-mysql/">or try make a new user!</a>
+    </li>
 </ul>
 
 If you want to mount external hard drive(s) to folders check out this guide https://www.htpcguides.com/properly-mount-usb-storage-raspberry-pi/ then create a symbolic link with the folder name to the folder in the mounted drive using <code>ln -s /var/www/html/stored/folder /mnt/storage/folder</code>
