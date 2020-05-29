@@ -306,6 +306,75 @@ h1,
  *
  == LOADERS (Website loaders and loading things)
  */
+.uploader-container {
+  width: 100%;
+}
+.uploader-container .uploader {
+  width: 100%;
+  padding-top: 42.78%;
+  border: 2px dashed var(--green);
+  position: relative;
+  filter: brightness(80%);
+  cursor: pointer;
+}
+.uploader-container .uploader::after {
+  color: var(--green);
+  filter: brightness(80%);
+  content: attr(data-title);
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.uploader-container .uploading {
+  width: 100%;
+  padding-top: 42.78%;
+  border: 2px solid var(--cyan);
+  position: relative;
+}
+.uploader-container .uploading span {
+  color: var(--cyan);
+  filter: brightness(80%);
+  content: attr(data-title);
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.uploader-container .uploader.hover {
+  background: rgba(11, 46, 19, 0.2);
+}
+.uploader-container video {
+  width: 100%;
+  max-height: 666px;
+}
+.uploader-container .close-video {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--red);
+  color: white;
+  padding: 16px 0;
+  text-align: center;
+  top: 7.5px;
+  right: 7.5px;
+}
+.uploader-container .close-video:focus {
+  outline: none;
+}
+.uploader-container .close-video i {
+  font-size: 32px;
+}
+
 .loader {
   border: 5px solid transparent;
   border-radius: 50%;

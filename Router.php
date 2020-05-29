@@ -3,9 +3,9 @@ global $incFile;
 
 $request = $_SERVER["REQUEST_URI"];
 
-$GETLoc = strpos($request,"?");
+$GETLoc = strpos($request, "?");
 $reqGET = substr($request, $GETLoc);
-if($GETLoc)
+if ($GETLoc)
     $reqStart = substr($request, 0, $GETLoc);
 else
     $reqStart = substr($request, 0);
@@ -23,11 +23,13 @@ $ajaxFile = "";
 $gotoLoc = "";
 
 if (isset($slugs[1]) && !empty($slugs[1])) {
-    switch ($slugs[1]) {
+    $routeType = $slugs[1];
+    switch ($routeType) {
         case "action":
-            $actionObj = $slugs[1];
             if (isset($slugs[2]) && !empty($slugs[2]))
-                $actionFunction = $slugs[2];
+                $actionObj = ucfirst($slugs[2]) . "_Controller"; // The controller
+            if (isset($slugs[3]) && !empty($slugs[3]))
+                $actionFunction = $slugs[3]; // The function
             break;
 
         case "ajax":
@@ -41,11 +43,13 @@ if (isset($slugs[1]) && !empty($slugs[1])) {
         default:
             for ($i = 1; $i <= count($slugs); $i++) {
                 if (isset($slugs[$i]) && !empty($slugs[$i]))
-                    $gotoLoc .= $slugs[$i];
+                    $gotoLoc .= $slugs[$i] . "/";
             }
+            // Remove last '/'
+            $finalSlash = strripos($gotoLoc, '/');
+            $gotoLoc = substr_replace($gotoLoc, "", $finalSlash, 1);
             break;
     }
-
 }
 
 //s($slugs);
@@ -56,15 +60,22 @@ if (isset($slugs[1]) && !empty($slugs[1])) {
 
 $incFile = realpath("") . "/Templates/Pages/home.php";
 
-
-if(isset($gotoLoc) && !empty($gotoLoc)) {
-    $incFile = "Templates/Pages/". $gotoLoc . ".php";
+if (isset($gotoLoc) && !empty($gotoLoc)) {
+    $incFile = "Templates/Pages/" . $gotoLoc . ".php";
 }
 
 
 if (!empty($actionObj) && !empty($actionFunction)) {
-    // Go to controller and activate function
-    // @todo make this work
+    // Include the controller
+    $fp = realpath("") . "/controllers/" . $actionObj . ".php";
+    s($fp);
+    if (file_exists($fp)) {
+        include($fp);
+        // Go to controller and activate function
+        $xObject = new $actionObj;
+        $xObject->$actionFunction();
+        exit();
+    }
 
 } else if (!empty($ajax) && !empty($ajaxFile)) {
     // Go to ajax folder and include ajax file

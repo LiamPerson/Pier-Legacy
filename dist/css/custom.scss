@@ -77,6 +77,7 @@ $moderate: .5s;
 
 * {
   font-size: $font-size-standard;
+
   &:not(.fa, .fas), {
     color: $textCol;
   }
@@ -193,6 +194,7 @@ $moderate: .5s;
     margin: 0;
   }
 }
+
 .movieThumbnail-main {
   cursor: pointer;
   transition: $fast;
@@ -384,7 +386,86 @@ h1,
  *
  == LOADERS (Website loaders and loading things)
  */
+.uploader-container {
+  width: 100%;
+  .uploader {
+    width: 100%;
+    padding-top: 42.78%;
+    border: 2px dashed var(--green);
+    position: relative;
+    filter: brightness(80%);
+    cursor: pointer;
 
+    &::after {
+      color: var(--green);
+      filter: brightness(80%);
+      content: attr(data-title);
+      text-transform: uppercase;
+      position: absolute;
+      opacity: 0.8;
+
+      font-weight: 600;
+      font-size: 32px;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .uploading {
+    width: 100%;
+    padding-top: 42.78%;
+    border: 2px solid var(--cyan);
+    position: relative;
+
+    span {
+      color: var(--cyan);
+      filter: brightness(80%);
+      content: attr(data-title);
+      text-transform: uppercase;
+      position: absolute;
+      opacity: 0.8;
+
+      font-weight: 600;
+      font-size: 32px;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .uploader.hover {
+    background: rgba(#0b2e13, 0.2);
+  }
+
+  video {
+    width: 100%;
+    max-height: 666px;
+  }
+
+  .close-video {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--red);
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    top: 7.5px;
+    right: 7.5px;
+
+    &:focus {
+      outline: none;
+    }
+
+    i {
+      font-size: 32px;
+    }
+  }
+}
 
 .loader {
   border: 5px solid transparent;

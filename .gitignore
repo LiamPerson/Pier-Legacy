@@ -8,4 +8,7 @@ workspace.xml
 !.gitignore
 !placeholder.thumb.jpg
 !abstract-user-flat-4.svg
-.idea/workspace.xml.idea 
+.idea/workspace.xml.idea
+
+/config/config.php
+/config/youtube-dl

@@ -10,7 +10,7 @@ $vidCreator = DL_Videos::_getCreatorInfo_byCreatorID($vInfo["creatorID"]);
         <div class="col-xl-9">
             <div class="row">
                 <?php absURI_to_relURI($vInfo["URI"]); ?>
-                <video class="col-12" controls autoplay>
+                <video class="col-12 p-0" controls autoplay>
                     <source src="<?php echo $vInfo["URI"]; ?>" type="video/mp4">
                 </video>
                 <div class="col-12 mt-3">

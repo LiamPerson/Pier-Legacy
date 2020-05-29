@@ -9,7 +9,7 @@ $mInfo = Movies::_getInfo_FromID($_GET["m"]);
         <div class="col-12">
             <div class="row">
                 <?php absURI_to_relURI($mInfo["URI"]); ?>
-                <video class="col-12" controls autoplay>
+                <video class="col-12 p-0" controls autoplay>
                     <source src="<?php echo $mInfo["URI"]; ?>" type="video/mp4">
                 </video>
                 <div class="col-12 mt-3">
