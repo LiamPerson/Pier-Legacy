@@ -55,5 +55,5 @@ Made for use with Raspberry Pi 4 Model B (though should work on other devices)
     </li>
 </ul>
 
-If you want to mount external hard drive(s) to folders check out this guide https://www.htpcguides.com/properly-mount-usb-storage-raspberry-pi/ then create a symbolic link with the folder name to the folder in the mounted drive using <code>ln -s /var/www/html/stored/folder /mnt/storage/folder</code>
+If you want to mount external hard drive(s) to folders check out this guide https://www.htpcguides.com/properly-mount-usb-storage-raspberry-pi/ then create a symbolic link with the folder name to the folder in the mounted drive using <code>ln -s /mnt/storage/folder /var/www/html/stored/folder</code>
 
