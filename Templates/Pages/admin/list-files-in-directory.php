@@ -1,20 +1,24 @@
 <?php
 // Get files from directory specified
-$dir = $_GET["directory"]; // Symbolic Linked
+$dir = ROOT . $_GET["directory"];
 $rootLength = strlen(ROOT);
-if(empty($dir))
-    $dir = '/';
-
-consoleLog($dir);
+$localDir = substr($dir, $rootLength);
 ?>
 
+<!--<form action="" method="get">-->
+<!--    <label for="listFilesFromX">List Files From</label>-->
+<!--    <input id="listFilesFromX" type="text" name="directory" class="form-control" placeholder="Directory to search">-->
+<!--    <button type="submit" class="btn btn-primary">Search</button>-->
+<!--</form>-->
 <div class="list-group mt-3">
 
     <?php
     // Make back button
-    $finalSlash = strripos($dir, '/');
-    $backOneDirectory = substr_replace($dir, "", $finalSlash);
-    echo '<a class="list-group-item list-group-item-action" href="/admin/list-files-in-directory?directory=' . $backOneDirectory . '"><i class="fas fa-arrow-left"></i> Back</a>';
+    if (!empty($localDir) && $dir != ROOT && $_GET["directory"] != "stored") {
+        $finalSlash = strripos($localDir, '/');
+        $backOneDirectory = substr_replace($localDir, "", $finalSlash);
+        echo '<a class="list-group-item list-group-item-action" href="/admin/list-files-in-directory?directory=' . $backOneDirectory . '"><i class="fas fa-arrow-left"></i> Back</a>';
+    }
 
 
     // Each item
@@ -26,7 +30,7 @@ consoleLog($dir);
         $extensionLocation = strripos($item, ".");
         if ($extensionLocation) {
             // Non-folders or directories
-            $href = $dir . "/" . $item;
+            $href = '/' . $localDir . "/" . $item;
             $icon = '<i class="fas fa-file"></i>';
             switch (substr($item, $extensionLocation)) {
                 // Videos
@@ -45,11 +49,8 @@ consoleLog($dir);
             }
             echo '<a class="list-group-item item-link list-group-item-action" href="' . $href . '">' . $icon . ' ' . $item . '</a>';
         } else {
-            // Folders / Directories / Symbolic Links
-            if (is_link($dir . '/' . $item))
-                echo '<a class="list-group-item item-link list-group-item-action" href="/admin/list-files-in-directory?directory=' . $dir . "%2F" . $item . '"><i class="fas fa-folder-plus"></i> ' . $item . '</a>';
-            else
-                echo '<a class="list-group-item item-link list-group-item-action" href="/admin/list-files-in-directory?directory=' . $dir . "%2F" . $item . '"><i class="fas fa-folder"></i> ' . $item . '</a>';
+            // Folders / Directories
+            echo '<a class="list-group-item item-link list-group-item-action" href="/admin/list-files-in-directory?directory=' . $localDir . "%2F" . $item . '"><i class="fas fa-folder"></i> ' . $item . '</a>';
         }
 
 
