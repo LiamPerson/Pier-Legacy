@@ -3,6 +3,8 @@
 $dir = ROOT . $_GET["directory"];
 $rootLength = strlen(ROOT);
 $localDir = substr($dir, $rootLength);
+
+consoleLog($dir);
 ?>
 
 <!--<form action="" method="get">-->
