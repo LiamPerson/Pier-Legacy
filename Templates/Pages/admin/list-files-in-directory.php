@@ -1,6 +1,10 @@
 <?php
 // Get files from directory specified
-$dir = ROOT . $_GET["directory"];
+if(!isset($_GET["symLnk"]))
+    $dir = $_GET["directory"]; // Symbolic Linked
+else
+    $dir = ROOT . $_GET["directory"]; // Directory
+
 $rootLength = strlen(ROOT);
 $localDir = substr($dir, $rootLength);
 
@@ -51,8 +55,12 @@ consoleLog($dir);
             }
             echo '<a class="list-group-item item-link list-group-item-action" href="' . $href . '">' . $icon . ' ' . $item . '</a>';
         } else {
-            // Folders / Directories
-            echo '<a class="list-group-item item-link list-group-item-action" href="/admin/list-files-in-directory?directory=' . $localDir . "%2F" . $item . '"><i class="fas fa-folder"></i> ' . $item . '</a>';
+            // Folders / Directories / Symbolic Links
+            $fullLocation = $dir.'/'.$item;
+            if(is_link($fullLocation))
+                echo '<a class="list-group-item item-link list-group-item-action" href="/admin/list-files-in-directory?directory=' . $dir . "%2F" . $item . '&symLnk=1"><i class="fas fa-folder-plus"></i> ' . $item . '</a>';
+            else
+                echo '<a class="list-group-item item-link list-group-item-action" href="/admin/list-files-in-directory?directory=' . $localDir . "%2F" . $item . '"><i class="fas fa-folder"></i> ' . $item . '</a>';
         }
 
 
