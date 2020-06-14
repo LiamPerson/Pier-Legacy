@@ -308,6 +308,15 @@ $moderate: .5s;
 //  position: static;
 //  bottom: 0;
 //}
+
+// For file viewer --hack--
+.item-link {
+  color: #005cbf;
+  &:visited {
+    color: purple;
+  }
+}
+
 h1,
 .h1 {
   font-size: $font-size-standard*1.6;
@@ -527,3 +536,4 @@ h1,
     display: none;
   }
 }
+

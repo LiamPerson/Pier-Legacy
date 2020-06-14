@@ -244,6 +244,13 @@ Initialisation
  *                                                                                  $$/
  == BOOTSTRAP (Bootstrap overrides)
  */
+.item-link {
+  color: #005cbf;
+}
+.item-link:visited {
+  color: purple;
+}
+
 h1,
 .h1 {
   font-size: 22.4px;
