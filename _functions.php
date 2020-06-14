@@ -109,3 +109,18 @@ function shortenString(string $string, int $maxLength) : string {
         $string .= '...';
     return $string;
 }
+
+function consoleLog($var, $key=null) {
+    $html = "";
+    $html .= "<script> /* consoleLog script */ ";
+
+    $html .= "console.log(\"Type: ". gettype($var) .", Key: ". $key ."\"); ";
+
+    if(gettype($var) === "boolean" || gettype($var) === "integer"  || gettype($var) === "double" || gettype($var) === "string")
+        $html .= "console.log('" . $var . "'); ";
+    if(gettype($var) === "array" || gettype($var) === "object" || gettype($var) === "resource")
+        $html .= "console.log('" . json_encode($var, JSON_HEX_TAG) . "'); ";
+
+    $html .= "</script>";
+    echo $html;
+}
