@@ -1,4 +1,5 @@
 # Pier - Raspberry Pi Home Server
+<p><strong>This project is still under construction!</strong></p>
 Made for use with Raspberry Pi 4 Model B (though should work on other devices)
 <h4>Connect to your Pier server by going to it's IP address in the browser of your choice e.g. in Google Chrome, top bar <code>192.168.8.77/</code> or simply go to the URL: <code>raspberrypi/</code></h4>
 <h2>Dependencies:</h2>
