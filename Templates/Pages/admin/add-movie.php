@@ -3,23 +3,26 @@
 <div class="uploader-container" id="uploadMovie">
     <div id="movieUpload" class="uploader" ondragleave="dragLeaveHandler(event);"
          ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" data-title="Drop movie on me"></div>
-    <div class="uploading" style="display: none;""><span>Uploading ...</span></div>
+    <div class="uploading" style="display: none;"><span>Uploading ...</span></div>
     <video onerror="console.log(event.target.error.code)" id="moviePreview" src="" style="display:none;" controls></video>
     <button type="button" id="removeMovie" onclick="removeContent();" style="display: none" class="close-video">
         <i class="fa fa-fw fa-trash-alt"></i>
     </button>
 </div>
 
-
-<form action="action/admin/addNewMovie" method="post" enctype="multipart/form-data">
-    <input type="text" class="form-control" placeholder="Movie Title">
+<form action="/action/admin/addNewMovie" onsubmit="checkValidMovieSubmission(this);" method="post" enctype="multipart/form-data">
+    <input type="text" name="title" class="form-control" placeholder="Movie Title" required>
     <textarea name="description" class="form-control" id="" cols="30" rows="10" placeholder="Movie's description..."></textarea>
-    <input type="text" class="form-control" placeholder="Movie">
-    <input type="date" class="form-control">
+    <input type="file" accept="image/png, image/jpeg" class="form-control" name="thumbnail" required onchange="updateThumbnail(this)">
+    <div id="thumbnailContainer" style="width: 244px; height: 364px; position: relative;"><img style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover' src="/img/thumbnail/movies/placeholder.thumb.jpg" alt="Please set an image."></div>
+    <input type="date" name="upload" placeholder="Movie Publication Date" class="form-control">
+    <button type="submit" class="btn btn-primary">Upload</button>
 </form>
 
 
 <script type="application/javascript">
+    var isMovieLoaded = false;
+
     function dropHandler(ev) {
         // Clear messages and reset drag content
         var preview = $("#uploadMovie video");
@@ -70,6 +73,9 @@
                         uploading.hide();
                         var videoElement = document.getElementById('moviePreview');
                         videoElement.load();
+
+                        isMovieLoaded = true;
+                        console.log(videoURL);
                     }
 
                     reader.readAsArrayBuffer(file);
@@ -94,6 +100,8 @@
         videoElement.pause();
         videoElement.removeAttribute('src'); // empty source
         videoElement.load();
+
+        isMovieLoaded = false;
     }
 
     function dragOverHandler(ev) {
@@ -105,5 +113,26 @@
     function dragLeaveHandler(ev) {
         $("#movieUpload").removeClass("hover");
         ev.preventDefault();
+    }
+
+    function checkValidMovieSubmission(ele) {
+        event.preventDefault();
+        var form = $(ele);
+
+        // Check that the movie is uploaded
+        if(isMovieLoaded) {
+            console.log("Movie loaded, uploading!");
+            ele.submit();
+        }
+    }
+
+    function updateThumbnail(ele) {
+        if (ele.files && ele.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#thumbnailContainer').html("<img src='"+e.target.result+"' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover'>");
+            }
+            reader.readAsDataURL(ele.files[0]); // convert to base64 string
+        }
     }
 </script>

@@ -11,4 +11,8 @@ class Admin_Controller {
     public function helloWorld() {
         echo "hello world! :)";
     }
+
+    public function addNewMovie() {
+        s($_FILES);
+    }
 }
