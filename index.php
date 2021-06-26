@@ -6,6 +6,7 @@ include "core/_startApp.php";
     <title>Pier</title>
     <link rel="stylesheet" href="/dist/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="/dist/css/custom.css" type="text/css">
+    <link rel="icon" href="/pier_512px.png" type="image/png">
     <link href="/dist/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
 </head>
 <body>
