@@ -14,7 +14,7 @@ class DL_Videos {
 
         foreach ($results as &$result) {
             if (!isset($result["thumbnailURI"]) || empty($result["thumbnailURI"]))
-                $result["thumbnailURI"] = IMG_DIR . THUMBNAIL_DL_VIDEOS_DIR . "placeholder.thumb.jpg";
+                $result["thumbnailURI"] = ROOT . THUMBNAIL_DL_VIDEOS_DIR . "placeholder.thumb.jpg";
         }
 
         return $results;
@@ -40,7 +40,7 @@ class DL_Videos {
         $db->execute();
         $result = $db->single();
         if (!isset($result["thumbnailURI"]) || empty($result["thumbnailURI"]))
-            $result["thumbnailURI"] = IMG_DIR . THUMBNAIL_CREATOR_DIR . "abstract-user-flat-4.svg";
+            $result["thumbnailURI"] = THUMBNAIL_CREATOR_DIR . "abstract-user-flat-4.svg";
         return $result;
     }
 

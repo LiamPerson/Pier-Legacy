@@ -14,7 +14,7 @@ $vidCreator = DL_Videos::_getCreatorInfo_byCreatorID($vInfo["creatorID"]);
                     <source src="<?php echo $vInfo["URI"]; ?>" type="video/mp4">
                 </video>
                 <div class="col-12 mt-3">
-                    <h1><?php echo $vInfo["name"]; ?></h1>
+                    <h1><?php echo $vInfo["title"]; ?></h1>
                     <p class="title-sub">Added: <?php echo strtodate($vInfo["dateAdded"]); ?></p>
                 </div>
                 <div class="col-12">
@@ -41,13 +41,13 @@ $vidCreator = DL_Videos::_getCreatorInfo_byCreatorID($vInfo["creatorID"]);
                         <div class="col-6">
                             <div class="videoThumbnailContainer">
                                 <div class="videoThumbnail-afterContainer">
-                                    <img src="<?php echo $vid["thumbnailURI"]; ?>" class="videoThumbnail" alt="Thumbnail for video: <?php echo $vid["name"]; ?>">
+                                    <img src="<?php echo $vid["thumbnailURI"]; ?>" class="videoThumbnail" alt="Thumbnail for video: <?php echo $vid["title"]; ?>">
                                     <time><?php echo seconds_to_timestamp($vid["length"]); ?></time>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <h6 class="videoThumbnail-Title" title="<?php echo $vid["name"]; ?>"><?php echo shortenString($vid["name"],40); ?></h6>
+                            <h6 class="videoThumbnail-Title" title="<?php echo $vid["title"]; ?>"><?php echo shortenString($vid["title"],40); ?></h6>
                             <a href="#" class="videoThumbnail-CreatorName"><?php echo $vidCreator["name"]; ?></a>
                             <p class="videoThumbnail-AddedDate"><?php echo time_ago($vid["dateAdded"]); ?></p>
                         </div>

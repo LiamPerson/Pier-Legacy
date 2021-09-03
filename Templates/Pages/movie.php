@@ -13,7 +13,7 @@ $mInfo = Movies::_getInfo_FromID($_GET["m"]);
                     <source src="<?php echo $mInfo["URI"]; ?>" type="video/mp4">
                 </video>
                 <div class="col-12 mt-3">
-                    <h1><?php echo $mInfo["name"] . " (" . string_to_year($mInfo["dateReleased"]) . ")"; ?></h1>
+                    <h1><?php echo $mInfo["title"] . " (" . string_to_year($mInfo["dateReleased"]) . ")"; ?></h1>
                     <p class="title-sub"><?php echo $mInfo["production"]; ?></p>
                     <p class="title-sub">Added: <?php echo strtodate($mInfo["dateAdded"]); ?></p>
                 </div>

@@ -14,7 +14,7 @@ class Movies {
 
         foreach ($results as &$result) {
             if (!isset($result["thumbnailURI"]) || empty($result["thumbnailURI"]))
-                $result["thumbnailURI"] = IMG_DIR . THUMBNAIL_MOVIES_DIR . "placeholder.thumb.jpg";
+                $result["thumbnailURI"] = ROOT . THUMBNAIL_MOVIES_DIR . "placeholder.thumb.jpg";
         }
 
         return $results;

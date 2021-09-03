@@ -9,7 +9,7 @@
             <div data-href="watch?v=<?php echo $vid["ID"]; ?>" class="col-md-6 col-xl-3 videoThumbnail-main" onclick="goToHREF(this);">
                 <div class="videoThumbnailContainer">
                     <div class="videoThumbnail-afterContainer">
-                        <img src="<?php echo $vid["thumbnailURI"]; ?>" class="videoThumbnail" alt="Thumbnail for video: <?php echo $vid["name"]; ?>">
+                        <img src="<?php echo $vid["thumbnailURI"]; ?>" class="videoThumbnail" alt="Thumbnail for video: <?php echo $vid["title"]; ?>">
                         <time><?php echo seconds_to_timestamp($vid["length"]); ?></time>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                         <img src="<?php echo $vidCreator["thumbnailURI"]; ?>" class="creatorThumbnail" alt="Thumbnail for <?php echo $vidCreator["name"]; ?>">
                     </div>
                     <div class="col">
-                        <h6 class="videoThumbnail-Title" title="<?php echo $vid["name"]; ?>"><?php echo $vid["name"]; ?></h6>
+                        <h6 class="videoThumbnail-Title" title="<?php echo $vid["title"]; ?>"><?php echo $vid["title"]; ?></h6>
                         <a href="#" class="videoThumbnail-CreatorName"><?php echo $vidCreator["name"]; ?></a>
                         <p class="videoThumbnail-AddedDate"><?php echo time_ago($vid["dateAdded"]); ?></p>
                     </div>

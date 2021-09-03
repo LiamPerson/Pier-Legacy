@@ -39,7 +39,7 @@ if ($vJSON) {
 
             // Enter information into database
             $sql = "INSERT INTO dl_videos (
-                       name, 
+                       title, 
                        description,
                        creatorID, 
                        URI, 
@@ -52,7 +52,7 @@ if ($vJSON) {
                        tags,
                        dateUploaded
                                 ) VALUES (
-                       :name,
+                       :title,
                        :description,
                        :creatorID, 
                        :URI, 
@@ -66,7 +66,7 @@ if ($vJSON) {
                        :dateUploaded                  
                                 )";
             $db->query($sql);
-            $db->bind(":name", $vInfo["fulltitle"]);
+            $db->bind(":title", $vInfo["fulltitle"]);
             $db->bind(":description", $vInfo["description"]);
             $db->bind(":creatorID", $creatorID);
             $db->bind(":URI", absURI_to_relURI($vInfo["_filename"]));
