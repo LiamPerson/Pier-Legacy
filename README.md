@@ -1,4 +1,4 @@
-# Pier - Raspberry Pi Home Server
+# Pier (Legacy) - Raspberry Pi Home Server
 <p><strong>⚠ This project is now abandoned. Successor: <a href="https://github.com/YeloPartyHat/Node-Pier">Node Pier</a> ⚠</strong></p>
 <hr>
 <img src="https://raw.githubusercontent.com/YeloPartyHat/Pier/master/docs/sample.png" alt="Preview of Pier home screen with content." />
